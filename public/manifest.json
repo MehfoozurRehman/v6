@@ -1,0 +1,25 @@
+{
+  "short_name": "Mehfooz-ur-Rehman",
+  "name": "Mehfooz-ur-Rehman",
+  "icons": [
+    {
+      "src": "pic.png",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "pic.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "pic.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#0a192f",
+  "background_color": "#0a192f"
+}
