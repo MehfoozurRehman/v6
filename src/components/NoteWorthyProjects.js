@@ -3,9 +3,12 @@ import { useNavigate } from "react-router-dom";
 import { fetcher } from "../utils/fetcher";
 import ProjectCard from "./ProjectCard";
 
-export default function NoteWorthyProjects({}) {
+export default function NoteWorthyProjects() {
   const navigate = useNavigate();
-  const { data, error } = useSWR(
+  const {
+    data,
+    error,
+  } = useSWR(
     "https://api.github.com/users/MehfoozurRehman/repos?per_page=10000&sort=updated",
     fetcher,
     { suspense: true }
@@ -24,10 +27,7 @@ export default function NoteWorthyProjects({}) {
           <div>failed to load</div>
         ) : (
           data
-            ?.filter(
-              (item, i) =>
-                item.description && item.description.length !== 0 && i <= 8
-            )
+            ?.filter((item, i) => i <= 8)
             .map((item) => <ProjectCard item={item} key={item.id} />)
         )}
       </div>

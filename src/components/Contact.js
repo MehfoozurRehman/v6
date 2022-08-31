@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Mail, MapPin, Phone } from "react-feather";
 
-export default function Contact({}) {
+export default function Contact() {
   return (
     <section
       id="contact__section"

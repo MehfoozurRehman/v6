@@ -1,4 +1,4 @@
-export default function HomeSection({}) {
+export default function HomeSection() {
   return (
     <section id="home__section" className="home__section">
       <div className="home__section__sub__heading">Hi, i am</div>

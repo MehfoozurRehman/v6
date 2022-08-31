@@ -29,52 +29,48 @@ export default function Archive() {
         {error ? (
           <div>failed to load</div>
         ) : (
-          data
-            ?.filter(
-              (item, i) => item.description && item.description.length !== 0
-            )
-            .map((item) => (
-              <div className="services__section__content__list" key={item.id}>
-                <div className="card__heading">
-                  {item.homepage && item.homepage !== null ? (
-                    <Layout size={30} color="currentColor" />
-                  ) : (
-                    <Box size={30} color="currentColor" />
-                  )}
+          data?.map((item) => (
+            <div className="services__section__content__list" key={item.id}>
+              <div className="card__heading">
+                {item.homepage && item.homepage !== null ? (
+                  <Layout size={30} color="currentColor" />
+                ) : (
+                  <Box size={30} color="currentColor" />
+                )}
 
-                  <span>{item.name.replace(/-/g, " ").replace(/_/g, " ")}</span>
-                </div>
-                <div
-                  className="card__info"
-                  style={{
-                    minHeight: "fit-content",
-                  }}
+                <span>{item.name.replace(/-/g, " ").replace(/_/g, " ")}</span>
+              </div>
+              <div
+                className="card__info"
+                style={{
+                  minHeight: "fit-content",
+                }}
+              >
+                {item.description}
+              </div>
+              <div className="portfolio__section__content__entry__content">
+                {item.language !== null ? item.language : "HTML"}
+              </div>
+              <div className="portfolio__section__content__entry__buttons">
+                <a
+                  href={item.html_url}
+                  className="portfolio__section__content__entry__button"
                 >
-                  {item.description}
-                </div>
-                <div className="portfolio__section__content__entry__content">
-                  {item.language !== null ? item.language : "HTML"}
-                </div>
-                <div className="portfolio__section__content__entry__buttons">
+                  <GitHub size={20} color="currentColor" />
+                  Github
+                </a>
+                {item.homepage && item.homepage !== null ? (
                   <a
-                    href={item.html_url}
+                    href={item.homepage}
                     className="portfolio__section__content__entry__button"
                   >
-                    <GitHub size={20} color="currentColor" />
-                    Github
+                    <Globe size={20} color="currentColor" />
+                    Website
                   </a>
-                  {item.homepage && item.homepage !== null ? (
-                    <a
-                      href={item.homepage}
-                      className="portfolio__section__content__entry__button"
-                    >
-                      <Globe size={20} color="currentColor" />
-                      Website
-                    </a>
-                  ) : null}
-                </div>
+                ) : null}
               </div>
-            ))
+            </div>
+          ))
         )}
       </div>
     </section>

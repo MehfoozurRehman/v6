@@ -6,7 +6,7 @@ import {
   Linkedin,
 } from "react-feather";
 
-export default function Socials({}) {
+export default function Socials() {
   return (
     <>
       <div className="social__links">

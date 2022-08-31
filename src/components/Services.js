@@ -1,6 +1,6 @@
 import ServicesCard from "./ServicesCard";
 
-export default function Services({}) {
+export default function Services() {
   return (
     <section id="services__section" className="services__section">
       <div className="services__section__header">

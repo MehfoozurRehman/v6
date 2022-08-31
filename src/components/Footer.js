@@ -1,6 +1,6 @@
 import { ArrowUp } from "react-feather";
 
-export default function Footer({}) {
+export default function Footer() {
   return (
     <section id="footer__section" className="footer">
       <div className="footer__content">

@@ -7,8 +7,8 @@ const NoteWorthyProjects = lazy(() =>
   import("../components/NoteWorthyProjects")
 );
 const GithubCalender = lazy(() => import("../components/GithubCalender"));
-const Clients = lazy(() => import("../components/Clients"));
-const Blogs = lazy(() => import("../components/Blogs"));
+// const Clients = lazy(() => import("../components/Clients"));
+// const Blogs = lazy(() => import("../components/Blogs"));
 const Testimonials = lazy(() => import("../components/Testimonials"));
 const Contact = lazy(() => import("../components/Contact"));
 
@@ -21,9 +21,9 @@ export default function Home() {
       <Work />
       <NoteWorthyProjects />
       <GithubCalender />
-      <Clients />
+      {/* <Clients /> */}
       <Testimonials />
-      <Blogs />
+      {/* <Blogs /> */}
       <Contact />
     </>
   );

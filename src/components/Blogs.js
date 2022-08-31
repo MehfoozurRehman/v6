@@ -1,7 +1,7 @@
 import BlogCard from "./BlogCard";
 import { useMedium } from "react-use-medium";
 
-export default function Blogs({}) {
+export default function Blogs() {
   const { data, isFetched } = useMedium("samerbuna");
 
   return (

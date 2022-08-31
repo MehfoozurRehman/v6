@@ -4,7 +4,7 @@ import TestimonialsCard from "./TestimonialsCard";
 import { fetcher } from "../utils/fetcher";
 import useSWR from "swr";
 
-export default function Testimonials({}) {
+export default function Testimonials() {
   const [slidesPerView, setSlidesPerView] = useState(2.5);
 
   const { data, error } = useSWR(

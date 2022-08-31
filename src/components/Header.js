@@ -4,7 +4,7 @@ import OutsideClickHandler from "react-outside-click-handler";
 import { useNavigate } from "react-router-dom";
 import NavLink from "./NavLink";
 
-export default function Header({}) {
+export default function Header() {
   const navigate = useNavigate();
   const navLinks = [
     {

@@ -1,6 +1,6 @@
 import ClientCard from "./ClientCard";
 
-export default function Clients({}) {
+export default function Clients() {
   return (
     <section id="clients__section" className="services__section">
       <div className="services__section__header">

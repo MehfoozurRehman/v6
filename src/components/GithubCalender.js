@@ -1,6 +1,6 @@
 import Calendar from "react-github-calendar";
 
-export default function GithubCalender({}) {
+export default function GithubCalender() {
   return (
     <div className="github__calender__wapper">
       <Calendar
