@@ -1,6 +1,7 @@
 {
   "short_name": "Mehfooz-ur-Rehman",
   "name": "Mehfooz-ur-Rehman",
+  "description": "Mehfooz-ur-Rehman's Portfolio",
   "icons": [
     {
       "src": "pic.png",
@@ -10,16 +11,22 @@
     {
       "src": "pic.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "192x192",
+      "purpose": "any"
     },
     {
       "src": "pic.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "512x512",
+      "purpose": "maskable"
     }
   ],
-  "start_url": ".",
+  "start_url": "https://mehfooz-ur-rehman.web.app/",
   "display": "standalone",
   "theme_color": "#0a192f",
-  "background_color": "#0a192f"
+  "background_color": "#0a192f",
+  "dir": "auto",
+  "scope": "https://mehfooz-ur-rehman.web.app/",
+  "lang": "en",
+  "orientation": "natural"
 }

@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
 :root {
   --primary: #64ffda;
   --secondary: #0a192f;
@@ -9,14 +7,13 @@
   --text-light: #b1bddd;
   --hover: rgba(99, 255, 219, 0.3);
 }
-
 *,
 *::after,
 *::before {
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-family: "Jost", sans-serif;
 }
-
 *::-webkit-scrollbar {
   width: 10px;
 }
@@ -24,7 +21,6 @@
   background-color: var(--primary);
   border-radius: 50px;
 }
-
 a:hover,
 button:hover {
   transition: 300ms ease-in-out;
@@ -32,7 +28,6 @@ button:hover {
 body {
   margin: 0;
   padding: 0;
-  font-family: "Jost", sans-serif;
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
@@ -49,7 +44,7 @@ body {
   width: 100%;
   max-width: 1600px;
   position: relative;
-  margin: 0em auto;
+  margin: 0 auto;
 }
 .social__links {
   display: flex;
@@ -57,7 +52,7 @@ body {
   align-items: center;
   position: fixed;
   left: calc(50% - 800px + 2em);
-  bottom: 0px;
+  bottom: 0;
 }
 .social__links__entries {
   display: flex;
@@ -83,7 +78,7 @@ body {
   align-items: flex-end;
   position: fixed;
   right: calc(50% - 800px + 2em);
-  bottom: 0px;
+  bottom: 0;
 }
 .social__email__text {
   transform: rotate(90deg);
@@ -99,7 +94,7 @@ body {
 .header {
   width: 100%;
   position: fixed;
-  top: 0px;
+  top: 0;
   background-color: var(--secondary);
   z-index: 999;
 }
@@ -108,16 +103,16 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0em auto;
+  margin: 0 auto;
   padding: 1.5em 2em;
   max-width: 1600px;
   position: relative;
 }
 .header__content__logo {
-  padding: 0em;
+  padding: 0;
   background-color: transparent;
   border: none;
-  margin: -10px 0em;
+  margin: -10px 0;
   cursor: pointer;
 }
 .header__content__logo__img {
@@ -139,7 +134,7 @@ body {
   height: 45px;
   border-radius: 10px;
   color: var(--primary);
-  padding: 0em;
+  padding: 0;
   display: none;
   align-items: center;
   justify-content: center;
@@ -173,8 +168,8 @@ body {
 }
 .header__content__nav__links__entry__input {
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   opacity: 0;
@@ -199,14 +194,31 @@ body {
   transition: 300ms ease-in-out;
   color: var(--primary);
 }
+.header__content__nav__link {
+  background-color: #fd0;
+  color: black;
+  height: 38px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 0em 1.5em;
+  margin-left: 1em;
+  text-align: center;
+}
+.header__content__nav__link:hover {
+  transition: 300ms ease-in-out;
+  background-color: rgb(230, 200, 5);
+}
 .header__content__nav__button {
   position: relative;
   margin-left: 1.5em;
 }
 .header__content__nav__button__input {
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   cursor: pointer;
@@ -217,7 +229,7 @@ body {
   width: 100%;
   height: 38px;
   color: var(--primary);
-  padding: 0em 1.8em;
+  padding: 0 1.8em;
   border: 1px solid var(--primary);
   border-radius: 5px;
   background-color: transparent;
@@ -248,7 +260,7 @@ body {
   width: 100%;
   max-width: 1200px;
   padding: 10em 2em;
-  padding-bottom: 0em;
+  padding-bottom: 0;
   min-height: fit-content;
 }
 .home__section__sub__heading {
@@ -271,10 +283,10 @@ body {
   color: var(--text);
   width: 100%;
   max-width: 400px;
-  margin: 2.5em 0em;
+  margin: 2.5em 0;
   margin-top: 2em;
 }
-.home__section__info span {
+.home__section__info a {
   color: var(--primary);
   margin-left: 0.5em;
 }
@@ -408,8 +420,26 @@ body {
   margin-bottom: -2em;
   margin-right: -4em;
 }
+.md__container {
+  flex-wrap: wrap;
+  margin-top: 2em;
+  margin-bottom: -2em;
+}
+.md__container img {
+  width: 100%;
+}
+.md__container * {
+  color: #8892b0;
+}
+.md__container h1 {
+  font-size: 40px;
+  text-transform: capitalize;
+}
+.md__container p a img {
+  max-width: 100px;
+}
 .services__section__content__reverse {
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 .services__section__content__left {
   display: flex;
@@ -463,7 +493,7 @@ body {
   background-color: var(--secondary-dark);
   left: 0.5em;
   color: var(--text);
-  padding: 0em 0.5em;
+  padding: 0 0.5em;
   font-size: 14px;
   z-index: -1;
   transition: 300ms ease-in-out;
@@ -472,9 +502,16 @@ body {
   height: 40px;
   background-color: transparent;
   border: 1px solid var(--text);
-  padding: 0em 1em;
+  padding: 0 1em;
   color: var(--white);
   outline: none;
+}
+.services__section__content__right__form__input__field:-webkit-autofill,
+.services__section__content__right__form__input__field:-webkit-autofill:hover,
+.services__section__content__right__form__input__field:-webkit-autofill:focus {
+  -webkit-text-fill-color: var(--white);
+  -webkit-box-shadow: 0 0 0px 1000px var(--secondary-dark) inset;
+  transition: background-color 5000s ease-in-out 0s;
 }
 .services__section__content__right__form__input__field__textarea {
   height: 120px;
@@ -503,7 +540,7 @@ body {
   justify-content: center;
   background-color: var(--secondary-dark);
   border: 1px solid var(--secondary-dark);
-  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
   padding: 2em;
   min-height: 150px;
   margin-bottom: 2em;
@@ -538,7 +575,7 @@ body {
   content: "";
   position: absolute;
   bottom: -10px;
-  left: 0px;
+  left: 0;
   width: 100px;
   height: 3px;
   border-radius: 5px;
@@ -554,7 +591,7 @@ body {
   height: 28px;
   border: 10px solid var(--secondary-dark);
   border-top: none;
-  border-bottom: 0px;
+  border-bottom: 0;
 }
 .card__info {
   font-size: 15px;
@@ -566,7 +603,7 @@ body {
   width: 100%;
 }
 .card__image__reverse {
-  margin: 0em auto;
+  margin: 0 auto;
   border-radius: 50px;
   margin-bottom: 1em;
   width: 56px;
@@ -575,7 +612,7 @@ body {
 .portfolio__section__content__entry__content {
   font-size: 15px;
   color: var(--text);
-  margin: 1em 0em;
+  margin: 1em 0;
   position: relative;
   margin-left: 2em;
 }
@@ -607,13 +644,14 @@ body {
   color: var(--primary);
 }
 .card__img {
-  max-width: 130px;
-  max-height: 40px;
-  margin: 0em auto;
+  max-width: 150px;
+  max-height: 100px;
+  margin: 0 auto;
+  mix-blend-mode: luminosity;
 }
 .card__banner {
   width: 100%;
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 10px 10px 0 0;
   max-height: 200px;
 }
 .card:hover {
@@ -642,7 +680,7 @@ body {
   margin-bottom: 4em;
 }
 .work__section__entry:last-child {
-  margin-bottom: 0em;
+  margin-bottom: 0;
 }
 .work__section__entry__left {
   width: 60%;
@@ -660,8 +698,8 @@ body {
 .work__section__entry__left::before {
   content: "";
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(4, 15, 31, 0.5);
@@ -673,7 +711,7 @@ body {
 }
 .work__section__entry__right {
   position: absolute;
-  right: 0px;
+  right: 0;
   width: 100%;
   max-width: 550px;
   display: flex;
@@ -714,7 +752,7 @@ body {
   color: var(--primary);
 }
 .work__section__entry__right__links__link:first-child {
-  margin-left: 0em;
+  margin-left: 0;
 }
 #loading {
   animation: loader 3s infinite linear;
@@ -741,14 +779,14 @@ body {
   max-width: 1200px;
   padding: 5em 2em;
   overflow-x: hidden;
-  margin: 0em auto;
+  margin: 0 auto;
   padding-bottom: 5em;
   position: relative;
 }
 .footer__content__button {
   position: absolute;
   bottom: 90px;
-  right: 0px;
+  right: 0;
   width: 50px;
   height: 50px;
   background-color: var(--secondary-dark);
@@ -805,7 +843,7 @@ body {
 .footer__content__row__link {
   background-color: transparent;
   border: none;
-  padding: 0em;
+  padding: 0;
   margin-right: 1em;
   cursor: pointer;
   color: var(--text);
@@ -838,7 +876,7 @@ body {
 @media (max-width: 1300px) {
   .home__section {
     padding: 7em 6em;
-    padding-bottom: 0em;
+    padding-bottom: 0;
   }
   .about__section__left__content__img {
     max-width: 350px;
@@ -855,7 +893,7 @@ body {
     max-width: 450px;
   }
   .services__section__content__test {
-    margin-right: 0em;
+    margin-right: 0;
   }
 }
 @media (max-width: 1150px) {
@@ -892,7 +930,7 @@ body {
 
   .about__section__left {
     width: 100%;
-    margin-right: 0em;
+    margin-right: 0;
     margin-bottom: 5em;
   }
   .home__section__info {
@@ -912,7 +950,7 @@ body {
   }
   .services__section__content__right__form {
     position: relative;
-    top: 0px;
+    top: 0;
     max-width: 100%;
   }
 }
@@ -925,33 +963,42 @@ body {
   }
   .header__content__nav {
     position: absolute;
-    top: 80px;
+    top: 90px;
     right: 1.5em;
   }
   .header__content__nav__wrapper {
     flex-direction: column;
     align-items: flex-start;
-    width: 180px;
+    width: 220px;
     background-color: var(--secondary);
     border-radius: 10px;
-    padding: 1em 1.5em;
-
-    box-shadow: 0px 0px 20px rgba(99, 255, 219, 0.05);
+    padding: 2em;
+    box-shadow: 0 0 20px rgba(99, 255, 219, 0.05);
+  }
+  .header__content__nav__link {
+    width: 100%;
   }
   .header__content__nav__links {
     flex-direction: column;
     align-items: flex-start;
   }
   .header__content__nav__links__entry {
-    margin-left: 0em;
+    margin-left: 0;
     margin-bottom: 1em;
   }
   .header__content__nav__links__entry__content__dot {
     margin-right: 1.4em;
   }
   .header__content__nav__button {
-    margin-left: 0em;
+    margin-left: 0;
     width: 100%;
+  }
+  .header__content__nav__link {
+    margin-left: 0em;
+    margin-top: 1em;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    height: fit-content;
   }
 }
 @media (max-width: 800px) {
@@ -959,8 +1006,9 @@ body {
     width: calc(100% + 1em);
   }
   .card {
-    max-width: 100%;
-    margin-right: 0em;
+    max-width: 100% !important;
+    min-width: 100% !important;
+    margin-right: 0;
   }
   .work__section__entry {
     flex-direction: column;
@@ -991,7 +1039,7 @@ body {
     flex-direction: column;
   }
   .services__section__content__reverse .card {
-    margin-right: 0em;
+    margin-right: 0;
   }
   .services__section__content__right__form {
     padding: 3em 2em;
@@ -1009,7 +1057,7 @@ body {
   }
   .home__section {
     padding: 7em 2em;
-    padding-bottom: 0em;
+    padding-bottom: 0;
   }
   .about__section {
     padding: 8em 2em;
