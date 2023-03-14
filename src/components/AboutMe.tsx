@@ -1,5 +1,6 @@
 import { fetcher } from "../utils/fetcher";
 import { getExperience } from "../utils/getExperience";
+import { memo } from "react";
 import { pic } from "../assets";
 import useSWR from "swr";
 
@@ -7,10 +8,13 @@ interface AboutMeProps {
   happyClients: any;
 }
 
-export default function AboutMe({ happyClients }: AboutMeProps) {
+const AboutMe = memo(({ happyClients }: AboutMeProps) => {
   const { data } = useSWR(
     "https://api.github.com/users/MehfoozurRehman",
-    fetcher
+    fetcher,
+    {
+      suspense: true,
+    }
   );
 
   return (
@@ -48,12 +52,12 @@ export default function AboutMe({ happyClients }: AboutMeProps) {
               ></path>
             </svg>
             <div className="about__section__left__content__blob__content">
-              {happyClients?.length} +<span>Happy Clients</span>
+              {happyClients} +<span>Happy Clients</span>
             </div>
           </div>
           <img
             src={pic}
-            alt="img"
+            alt={data?.login}
             className="about__section__left__content__img"
           />
         </div>
@@ -77,8 +81,7 @@ export default function AboutMe({ happyClients }: AboutMeProps) {
           }}
         >
           I'm a Web Developer based in Pakistan. I enjoy turning complex
-          problems into simple, beautiful and intuitive solutions. Working at
-          this time for "Haramosh Studio"
+          problems into simple, beautiful and intuitive solutions.
         </div>
         <div
           className="home__section__info"
@@ -121,4 +124,6 @@ export default function AboutMe({ happyClients }: AboutMeProps) {
       </div>
     </section>
   );
-}
+});
+
+export default AboutMe;

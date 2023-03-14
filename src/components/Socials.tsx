@@ -1,10 +1,4 @@
-import {
-  Codesandbox,
-  Facebook,
-  GitHub,
-  Instagram,
-  Linkedin,
-} from "react-feather";
+import { Codesandbox, Facebook, GitHub, Instagram } from "react-feather";
 
 export default function Socials() {
   return (

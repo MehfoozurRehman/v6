@@ -7,9 +7,12 @@ import { useTransition } from "react";
 export default function NoteWorthyProjects() {
   const [_isPending, startTransition] = useTransition();
   const navigate = useNavigate();
-  const { data, error } = useSWR(
+  const { data } = useSWR(
     "https://api.github.com/users/MehfoozurRehman/repos?sort=updated",
-    fetcher
+    fetcher,
+    {
+      suspense: true,
+    }
   );
 
   return (
@@ -21,13 +24,15 @@ export default function NoteWorthyProjects() {
         <div className="home__section__heading">Projects</div>
       </div>
       <div className="services__section__content">
-        {error ? (
-          <div>failed to load</div>
-        ) : (
-          data
-            ?.filter((item, i) => i <= 8 && item.fork === false)
-            ?.map((item: any) => <ProjectCard item={item} key={item.id} />)
-        )}
+        {data
+          ?.filter((item: { description: any }) => item.description !== null)
+          ?.filter(
+            (item: { fork: boolean }, i: number) =>
+              i <= 8 && item.fork === false
+          )
+          ?.map((item: any) => (
+            <ProjectCard item={item} key={item.id} />
+          ))}
       </div>
       <button
         className="home__section__button"

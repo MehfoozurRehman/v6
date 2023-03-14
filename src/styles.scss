@@ -12,7 +12,8 @@
 *::before {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: "Jost", sans-serif;
+  font-family: "Cabin", sans-serif;
+  line-height: 150%;
 }
 *::-webkit-scrollbar {
   width: 10px;
@@ -34,6 +35,15 @@ body {
   align-items: center;
   background-color: var(--secondary);
 }
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 #root {
   width: 100%;
 }
@@ -45,6 +55,9 @@ body {
   max-width: 1600px;
   position: relative;
   margin: 0 auto;
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 .social__links {
   display: flex;
@@ -644,8 +657,10 @@ body {
   color: var(--primary);
 }
 .card__img {
-  max-width: 150px;
+  max-width: 170px;
   max-height: 100px;
+  width: 100%;
+  height: 100%;
   margin: 0 auto;
   mix-blend-mode: luminosity;
 }
@@ -861,6 +876,7 @@ body {
   padding: 2em;
   border-radius: 10px;
   border: 1px solid var(--secondary-dark);
+  text-decoration: none;
 }
 .services__section__content__list:hover {
   border-color: var(--primary);

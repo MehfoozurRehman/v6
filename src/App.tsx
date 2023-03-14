@@ -6,7 +6,7 @@ import Loading from "./components/Loading";
 import { Outlet } from "react-router-dom";
 import Socials from "./components/Socials";
 
-export default function App() {
+export function App(): JSX.Element {
   const [showFooter, setShowFooter] = useState(false);
   useEffect(() => {
     if (window.location.pathname === "/") {

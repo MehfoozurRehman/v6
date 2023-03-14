@@ -4,7 +4,7 @@ interface TextareaBoxProps {
   placeholder: string;
 }
 
-export function TextareaBox({ placeholder }: TextareaBoxProps) {
+export default function TextareaBox({ placeholder }: TextareaBoxProps) {
   const [onFucus, setOnFocus] = useState(false);
   const [value, setValue] = useState("");
   return (

@@ -8,9 +8,9 @@ export default function ClientCard({ image, name }: ClientCardProps) {
     <div
       className="card"
       style={{
-        minWidth: "fit-content",
-        maxWidth: "fit-content",
+        minWidth: "100%",
         minHeight: 100,
+        marginBottom: 0,
       }}
     >
       <img loading="lazy" src={image} alt={name} className="card__img" />

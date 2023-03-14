@@ -33,26 +33,35 @@ export default function Header() {
       label: "Testimonials",
       scrollTo: "testimonials",
     },
-    // {
-    //   label: "Blog",
-    //   scrollTo: "blog",
-    // },
   ];
   const [isNavOpen, setIsNavOpen] = useState(true);
-  useLayoutEffect(() => {
+
+  function changeNavState() {
     if (window.innerWidth < 950) {
       setIsNavOpen(false);
     } else {
       setIsNavOpen(true);
     }
-    window.addEventListener("resize", () => {
-      if (window.innerWidth < 950) {
-        setIsNavOpen(false);
-      } else {
-        setIsNavOpen(true);
-      }
-    });
+  }
+
+  useLayoutEffect(() => {
+    changeNavState();
+    window.addEventListener("resize", changeNavState);
   }, []);
+
+  function activeOnScroll() {
+    const scrollPosition = window.scrollY;
+    const element = document.getElementById(scrollTo + "__section");
+    const elementPosition = element.offsetTop;
+    const elementHeight = element.offsetHeight;
+    if (
+      scrollPosition >= elementPosition - 100 &&
+      scrollPosition < elementPosition + elementHeight - 100
+    ) {
+      document.getElementById(scrollTo).checked = true;
+    }
+  }
+  window.addEventListener("scroll", activeOnScroll);
 
   return (
     <div className="header">
@@ -129,10 +138,9 @@ export default function Header() {
             >
               <div className="header__content__nav__wrapper">
                 <div className="header__content__nav__links">
-                  {navLinks?.map((link, index) => (
+                  {navLinks?.map((link) => (
                     <NavLink
                       key={link.label}
-                      index={index}
                       label={link.label}
                       scrollTo={link.scrollTo}
                       defaultChecked={link.defaultChecked}

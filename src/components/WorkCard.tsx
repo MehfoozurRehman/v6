@@ -1,5 +1,6 @@
 import { GitHub, Link } from "react-feather";
 
+import { memo } from "react";
 import project from "../assets/project.webp";
 
 interface WorkCardProps {
@@ -12,25 +13,29 @@ interface WorkCardProps {
   name: string;
 }
 
-export default function WorkCard({
-  tech,
-  right,
-  banner,
-  info,
-  siteLink,
-  githubLink,
-  name,
-}: WorkCardProps) {
-  return (
+const WorkCard = memo(
+  ({
+    tech,
+    right,
+    banner,
+    info,
+    siteLink,
+    githubLink,
+    name,
+  }: WorkCardProps) => (
     <div
       className="work__section__entry"
       style={right ? { justifyContent: "flex-end" } : null}
     >
-      <a href={siteLink} className="work__section__entry__left" title="website">
+      <a
+        href={siteLink}
+        className="work__section__entry__left"
+        title={name.replace(".com", "")}
+      >
         <img
           loading="lazy"
           src={banner ? banner : project}
-          alt="project_img"
+          alt={name.replace(".com", "")}
           className="work__section__entry__left__img"
         />
       </a>
@@ -41,7 +46,9 @@ export default function WorkCard({
         <div className="work__section__entry__right__sub__heading">
           DSME Globals
         </div>
-        <div className="work__section__entry__right__heading">{name}</div>
+        <div className="work__section__entry__right__heading">
+          {name.replace(".com", "")}
+        </div>
         <div
           className="work__section__entry__right__info"
           style={right ? { textAlign: "left" } : null}
@@ -74,5 +81,7 @@ export default function WorkCard({
         </div>
       </div>
     </div>
-  );
-}
+  )
+);
+
+export default WorkCard;

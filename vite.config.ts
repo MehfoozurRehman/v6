@@ -12,23 +12,6 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: "autoUpdate",
-      workbox: {
-        runtimeCaching: [
-          {
-            handler: "NetworkOnly",
-            urlPattern: /\/api\/.*\/*.json/,
-            method: "POST",
-            options: {
-              backgroundSync: {
-                name: "myQueueName",
-                options: {
-                  maxRetentionTime: 24 * 60,
-                },
-              },
-            },
-          },
-        ],
-      },
     }),
     ViteWebfontDownload(),
     chunkSplitPlugin(),

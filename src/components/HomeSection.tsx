@@ -10,7 +10,7 @@ export default function HomeSection() {
         I'm a Web Developer based in Pakistan. Proficent in web and mobile
         deveopment. I enjoy turning complex problems into simple, beautiful and
         intuitive solutions. Working at this time for
-        <a href="https://crazybeings.com/" target="_blank">
+        <a href="https://crazybeingstudio.com/" target="_blank">
           Crazybeings Studio
         </a>
       </div>

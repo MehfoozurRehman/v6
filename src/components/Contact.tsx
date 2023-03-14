@@ -2,7 +2,7 @@ import { Mail, MapPin, Phone } from "react-feather";
 import { useEffect, useRef, useState } from "react";
 
 import { InputBox } from "./InputBox";
-import { TextareaBox } from "./TextareaBox";
+import TextareaBox from "./TextareaBox";
 import emailjs from "@emailjs/browser";
 
 export default function Contact() {
