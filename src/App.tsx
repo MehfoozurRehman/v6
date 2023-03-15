@@ -1,11 +1,12 @@
-import { Suspense, useEffect, useState } from "react";
+import { Suspense, lazy, useEffect, useState } from "react";
 
-import Footer from "./components/Footer";
-import Header from "./components/Header";
 import Loading from "./components/Loading";
 import { Outlet } from "react-router-dom";
 import { Server } from "react-feather";
-import Socials from "./components/Socials";
+
+const Socials = lazy(() => import("./components/Socials"));
+const Header = lazy(() => import("./components/Header"));
+const Footer = lazy(() => import("./components/Footer"));
 
 export function App(): JSX.Element {
   const [showFooter, setShowFooter] = useState(false);

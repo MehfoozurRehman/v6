@@ -1,8 +1,10 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
 import { App } from "./App";
-import Archive from "./screens/Archive";
-import Home from "./screens/Home";
+import { lazy } from "react";
+
+const Home = lazy(() => import("./screens/Home"));
+const Archive = lazy(() => import("./screens/Archive"));
 
 export function Routes(): JSX.Element {
   return (
