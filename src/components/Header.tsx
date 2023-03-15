@@ -49,20 +49,6 @@ export default function Header() {
     window.addEventListener("resize", changeNavState);
   }, []);
 
-  function activeOnScroll() {
-    const scrollPosition = window.scrollY;
-    const element = document.getElementById(scrollTo + "__section");
-    const elementPosition = element.offsetTop;
-    const elementHeight = element.offsetHeight;
-    if (
-      scrollPosition >= elementPosition - 100 &&
-      scrollPosition < elementPosition + elementHeight - 100
-    ) {
-      document.getElementById(scrollTo).checked = true;
-    }
-  }
-  window.addEventListener("scroll", activeOnScroll);
-
   return (
     <div className="header">
       <div className="header__content">

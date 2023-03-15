@@ -3,9 +3,10 @@ import { useState } from "react";
 interface InputBoxProps {
   placeholder: string;
   type: string;
+  name: string;
 }
 
-export function InputBox({ placeholder, type, ...props }: InputBoxProps) {
+export function InputBox({ placeholder, type, name, ...props }: InputBoxProps) {
   const [onFucus, setOnFocus] = useState(false);
   const [value, setValue] = useState("");
   return (
@@ -24,6 +25,7 @@ export function InputBox({ placeholder, type, ...props }: InputBoxProps) {
         {placeholder}
       </label>
       <input
+        name={name}
         type={type}
         id={placeholder}
         value={value}

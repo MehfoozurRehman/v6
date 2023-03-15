@@ -34,7 +34,7 @@ export default function Contact() {
           setSubmitted(true);
         },
         (error) => {
-          console.log(error.text);
+          alert(error.text);
         }
       );
   };

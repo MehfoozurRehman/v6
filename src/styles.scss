@@ -489,9 +489,9 @@ body {
   width: 100%;
   max-width: 450px;
   padding: 2.5em;
-  position: absolute;
-  top: -110px;
+  margin-top: -110px;
   border-radius: 10px;
+  margin-bottom: -150px;
   z-index: 5;
 }
 .services__section__content__right__form__input {
@@ -786,6 +786,7 @@ body {
 }
 .footer {
   width: 100%;
+  position: relative;
 }
 .footer__content {
   display: flex;
@@ -796,7 +797,6 @@ body {
   overflow-x: hidden;
   margin: 0 auto;
   padding-bottom: 5em;
-  z-index: -1;
   position: relative;
 }
 .footer__content__button {
@@ -979,8 +979,8 @@ body {
     width: 100%;
   }
   .services__section__content__right__form {
-    position: relative;
-    top: 0;
+    margin-top: 0;
+    margin-bottom: 0;
     max-width: 100%;
   }
 }
@@ -1051,9 +1051,6 @@ body {
   .work__section__entry__right {
     position: relative;
     max-width: 100%;
-  }
-  .footer__content__row:last-child {
-    display: none;
   }
 }
 @media (max-width: 580px) {

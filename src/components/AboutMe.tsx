@@ -86,7 +86,6 @@ const AboutMe = memo(({ happyClients }: AboutMeProps) => {
         <div
           className="home__section__info"
           style={{
-            marginBottom: 0,
             marginTop: 20,
           }}
         >
@@ -94,25 +93,6 @@ const AboutMe = memo(({ happyClients }: AboutMeProps) => {
           attractive websites for you. Moreover, I add a personal touch to your
           product and make sure that it is eye-catching and easy to use. My aim
           is to bring across your message and identity in the most creative way.
-        </div>
-        <div
-          className="home__section__info"
-          style={{
-            marginBottom: 0,
-            marginTop: 20,
-          }}
-        >
-          🦄 <span>Skills:</span> HTML5, CSS3, JavaScript, Bootstrap, ReactJS,
-          MongoDB, ExpressJS, NodeJS, Typescript, Graphql, Rest
-        </div>
-        <div
-          className="home__section__info"
-          style={{
-            marginTop: 20,
-          }}
-        >
-          💼 <span>Tools:</span> Visual Studio Code, Android Studio, GitHub
-          Desktop, Windows Terminal, Firebase, Netlify, Adobe XD and Git.
         </div>
         <a
           href="https://docs.google.com/document/d/1Z3e-5Ti2Zw9aol5RH5BUoiL8AC7HROHHQQkfvX6MQbQ/edit?usp=sharing"
