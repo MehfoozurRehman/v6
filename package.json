@@ -1,7 +1,4 @@
 {
-  "name": "protfolio",
-  "version": "0.1.0",
-  "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
     "react": "^18.2.0",
@@ -12,12 +9,6 @@
     "react-router-dom": "^6.9.0",
     "swiper": "^9.1.0",
     "swr": "^2.1.0"
-  },
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "deploy": "yarn build && firebase deploy"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",
@@ -31,5 +22,14 @@
     "vite-plugin-imagemin": "^0.6.1",
     "vite-plugin-pwa": "^0.14.4",
     "vite-plugin-webfont-dl": "^3.6.1"
-  }
+  },
+  "name": "protfolio",
+  "private": true,
+  "scripts": {
+    "build": "vite build",
+    "deploy": "yarn build && firebase deploy",
+    "dev": "vite",
+    "preview": "vite preview"
+  },
+  "version": "0.1.0"
 }
