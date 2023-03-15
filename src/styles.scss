@@ -796,6 +796,7 @@ body {
   overflow-x: hidden;
   margin: 0 auto;
   padding-bottom: 5em;
+  z-index: -1;
   position: relative;
 }
 .footer__content__button {
@@ -880,6 +881,19 @@ body {
 }
 .services__section__content__list:hover {
   border-color: var(--primary);
+}
+.offline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+.offline__heading {
+  color: white;
+  font-size: 20px;
+  margin-top: 1em;
 }
 @media (max-width: 1440px) {
   .social__links {

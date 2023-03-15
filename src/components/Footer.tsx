@@ -1,5 +1,11 @@
-import { ArrowUp } from "react-feather";
-import { qrcode } from "../assets";
+import {
+  ArrowUp,
+  Codesandbox,
+  Facebook,
+  GitHub,
+  Instagram,
+  Linkedin,
+} from "react-feather";
 
 export default function Footer() {
   return (
@@ -68,7 +74,7 @@ export default function Footer() {
               you liked this please consider sending feedback or contacting me
               for work looking forward to working with you 🫠
             </div>
-            {/* <div className="footer__content__row__col__social">
+            <div className="footer__content__row__col__social">
               <a
                 href="https://github.com/MehfoozurRehman"
                 title="github"
@@ -104,13 +110,13 @@ export default function Footer() {
               >
                 <Codesandbox size={20} color="currentColor" />
               </a>
-            </div> */}
-            <img
+            </div>
+            {/* <img
               loading="lazy"
               src={qrcode}
               alt="buy me coffee qr code"
               style={{ width: 150, height: 150 }}
-            />
+            /> */}
           </div>
         </div>
         {/* <div className="footer__content__row">
