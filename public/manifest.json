@@ -1,12 +1,12 @@
 {
-  "short_name": "Mehfooz-ur-Rehman",
-  "name": "Mehfooz-ur-Rehman",
-  "description": "Mehfooz-ur-Rehman's Portfolio",
+  "name": "Mehfooz-ur-Rehman Portfolio",
+  "short_name": "MUR Portfolio",
+  "description": "This is Mehfooz-ur-Rehman's portfolio.",
   "icons": [
     {
       "src": "favicon.svg",
       "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/png"
+      "type": "image/svg+xml"
     },
     {
       "src": "favicon.svg",
@@ -21,12 +21,12 @@
       "purpose": "maskable"
     }
   ],
-  "start_url": ".",
+  "start_url": "/",
   "display": "standalone",
-  "theme_color": "#0a192f",
   "background_color": "#0a192f",
-  "dir": "auto",
-  "scope": ".",
+  "theme_color": "#0a192f",
+  "orientation": "natural",
   "lang": "en",
-  "orientation": "natural"
+  "dir": "auto",
+  "scope": "."
 }

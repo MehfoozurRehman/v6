@@ -1,7 +1,7 @@
 import { Mail, MapPin, Phone } from "react-feather";
 import { useEffect, useRef, useState } from "react";
 
-import { InputBox } from "./InputBox";
+import InputBox from "./InputBox";
 import TextareaBox from "./TextareaBox";
 import emailjs from "@emailjs/browser";
 
@@ -10,34 +10,30 @@ export default function Contact() {
   const form = useRef();
 
   useEffect(() => {
-    setTimeout(() => {
-      if (submitted) {
+    if (submitted) {
+      setTimeout(() => {
         form.current.reset();
         setSubmitted(false);
-      }
-    }, 3000);
+      }, 3000);
+    }
   }, [submitted]);
 
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
+    try {
+      await emailjs.sendForm(
         "service_3dm7yud",
         "template_vu88eib",
         form.current,
         "user_5E0L53uCeIn6J8FtgNgs8"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          setSubmitted(true);
-        },
-        (error) => {
-          alert(error.text);
-        }
       );
+      setSubmitted(true);
+    } catch (error) {
+      alert(error.text);
+    }
   };
+
   return (
     <section
       id="contact__section"

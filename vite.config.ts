@@ -1,12 +1,11 @@
-import { VitePWA } from "vite-plugin-pwa";
-import { ViteWebfontDownload } from "vite-plugin-webfont-dl";
-import { chunkSplitPlugin } from "vite-plugin-chunk-split";
+import { VitePWA } from "vite-plugin-pwa"; // Adds PWA support to the project
+import { ViteWebfontDownload } from "vite-plugin-webfont-dl"; // Downloads webfonts at build time
+import { chunkSplitPlugin } from "vite-plugin-chunk-split"; // Splits code into smaller chunks for faster loading
 import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
-import viteCompression from "vite-plugin-compression";
-import viteImagemin from "vite-plugin-imagemin";
+import react from "@vitejs/plugin-react"; // Provides support for React framework
+import viteCompression from "vite-plugin-compression"; // Compresses assets for faster loading
+import viteImagemin from "vite-plugin-imagemin"; // Minifies images to reduce file size
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
     react(),

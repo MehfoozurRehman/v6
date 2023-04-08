@@ -1,52 +1,46 @@
 import { Menu, X } from "react-feather";
-import { useLayoutEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 
 import NavLink from "./NavLink";
 import OutsideClickHandler from "react-outside-click-handler";
 import { useNavigate } from "react-router-dom";
 
+const navLinks = [
+  {
+    label: "Home",
+    scrollTo: "home",
+    defaultChecked: true,
+  },
+  {
+    label: "About Me",
+    scrollTo: "about",
+  },
+  {
+    label: "Services",
+    scrollTo: "services",
+  },
+  {
+    label: "Work",
+    scrollTo: "work",
+  },
+  {
+    label: "Clients",
+    scrollTo: "clients",
+  },
+  {
+    label: "Testimonials",
+    scrollTo: "testimonials",
+  },
+];
+
 export default function Header() {
   const navigate = useNavigate();
-  const navLinks = [
-    {
-      label: "Home",
-      scrollTo: "home",
-      defaultChecked: true,
-    },
-    {
-      label: "About Me",
-      scrollTo: "about",
-    },
-    {
-      label: "Services",
-      scrollTo: "services",
-    },
-    {
-      label: "Work",
-      scrollTo: "work",
-    },
-    {
-      label: "Clients",
-      scrollTo: "clients",
-    },
-    {
-      label: "Testimonials",
-      scrollTo: "testimonials",
-    },
-  ];
-  const [isNavOpen, setIsNavOpen] = useState(true);
+  const [isNavOpen, setIsNavOpen] = useState(window.innerWidth >= 950);
 
-  function changeNavState() {
-    if (window.innerWidth < 950) {
-      setIsNavOpen(false);
-    } else {
-      setIsNavOpen(true);
-    }
-  }
-
-  useLayoutEffect(() => {
-    changeNavState();
+  useEffect(() => {
+    const changeNavState = () => setIsNavOpen(window.innerWidth >= 950);
     window.addEventListener("resize", changeNavState);
+    return () => window.removeEventListener("resize", changeNavState);
   }, []);
 
   return (

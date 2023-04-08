@@ -9,27 +9,31 @@ interface ClientsProps {
 }
 
 export default function Clients({ data }: ClientsProps) {
+  const sliderConfig = [
+    { width: 500, slides: 1 },
+    { width: 700, slides: 2 },
+    { width: 1000, slides: 3 },
+    { width: 1366, slides: 4 },
+    { width: 1500, slides: 5 },
+    { width: Infinity, slides: 6 },
+  ];
+
   const [slidesPerView, setSlidesPerView] = useState(6);
+  const [isMobile, setIsMobile] = useState(false);
 
   function changeSlidesPerView() {
-    if (window.innerWidth < 500) {
-      setSlidesPerView(1);
-    } else if (window.innerWidth < 700) {
-      setSlidesPerView(2);
-    } else if (window.innerWidth < 1000) {
-      setSlidesPerView(3);
-    } else if (window.innerWidth < 1366) {
-      setSlidesPerView(4);
-    } else if (window.innerWidth < 1500) {
-      setSlidesPerView(5);
-    } else {
-      setSlidesPerView(6);
-    }
+    const windowWidth = window.innerWidth;
+    const { slides } = sliderConfig.find((s) => s.width > windowWidth);
+    setIsMobile(windowWidth < 800);
+    setSlidesPerView(slides);
   }
 
   useEffect(() => {
     changeSlidesPerView();
     window.addEventListener("resize", changeSlidesPerView);
+    return () => {
+      window.removeEventListener("resize", changeSlidesPerView);
+    };
   }, []);
 
   return (
@@ -43,7 +47,7 @@ export default function Clients({ data }: ClientsProps) {
       <div
         className="services__section__content"
         style={{
-          marginRight: 0,
+          paddingRight: isMobile ? 0 : "2em",
           marginLeft: 0,
         }}
       >

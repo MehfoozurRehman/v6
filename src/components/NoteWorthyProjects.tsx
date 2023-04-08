@@ -1,11 +1,9 @@
 import ProjectCard from "./ProjectCard";
-import { fetcher } from "../utils/fetcher";
+import fetcher from "../utils/fetcher";
 import { useNavigate } from "react-router-dom";
 import useSWR from "swr";
-import { useTransition } from "react";
 
 export default function NoteWorthyProjects() {
-  const [_isPending, startTransition] = useTransition();
   const navigate = useNavigate();
   const { data } = useSWR(
     "https://api.github.com/users/MehfoozurRehman/repos?sort=updated",
@@ -25,22 +23,17 @@ export default function NoteWorthyProjects() {
       </div>
       <div className="services__section__content">
         {data
-          ?.filter((item: { description: any }) => item.description !== null)
-          ?.filter(
-            (item: { fork: boolean }, i: number) =>
-              i <= 8 && item.fork === false
-          )
-          ?.map((item: any) => (
+          ?.filter((item) => item.description && !item.fork)
+          ?.slice(0, 6)
+          ?.map((item) => (
             <ProjectCard item={item} key={item.id} />
           ))}
       </div>
       <button
         className="home__section__button"
         onClick={() => {
-          startTransition(() => {
-            window.scrollTo({ behavior: "smooth", top: 0 });
-            navigate("/archive");
-          });
+          window.scrollTo({ behavior: "smooth", top: 0 });
+          navigate("/archive");
         }}
         style={{ margin: "0 auto", marginTop: "4em" }}
         title="Load more projects"

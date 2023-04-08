@@ -1,5 +1,40 @@
 import ServicesCard from "./ServicesCard";
 
+const services = [
+  {
+    title: "Frontend Development",
+    skills: [
+      "ReactJS",
+      "NextJS",
+      "Remix",
+      "Jotai",
+      "Typescript",
+      "React Native",
+      "Electron",
+      "Redux",
+      "Netlify",
+      "Vercel",
+    ],
+  },
+  {
+    title: "Backend Development",
+    skills: [
+      "MongoDB",
+      "ExpressJS",
+      "NodeJS",
+      "Graphql",
+      "Rest",
+      "Firebase",
+      "Railway",
+      "Heroku",
+    ],
+  },
+  {
+    title: "General",
+    skills: ["Adobe Xd", "Figma", "Illustrator", "Gimp", "Git", "yarn", "npm"],
+  },
+];
+
 export default function Services() {
   return (
     <section id="services__section" className="services__section">
@@ -8,46 +43,13 @@ export default function Services() {
         <div className="home__section__heading">Services</div>
       </div>
       <div className="services__section__content">
-        <ServicesCard
-          title="Frontend Development"
-          skills={[
-            "ReactJS",
-            "NextJS",
-            "Remix",
-            "Jotai",
-            "Typescript",
-            "React Native",
-            "Electron",
-            "Redux",
-            "Netlify",
-            "Vercel",
-          ]}
-        />
-        <ServicesCard
-          title="Backend Development"
-          skills={[
-            "MongoDB",
-            "ExpressJS",
-            "NodeJS",
-            "Graphql",
-            "Rest",
-            "Firebase",
-            "Railway",
-            "Heroku",
-          ]}
-        />
-        <ServicesCard
-          title="General"
-          skills={[
-            "Adobe Xd",
-            "Figma",
-            "Illustrator",
-            "Gimp",
-            "Git",
-            "yarn",
-            "npm",
-          ]}
-        />
+        {services.map((service, index) => (
+          <ServicesCard
+            key={index}
+            title={service.title}
+            skills={service.skills}
+          />
+        ))}
       </div>
     </section>
   );

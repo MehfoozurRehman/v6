@@ -46,7 +46,11 @@ export default function TestimonialsCard({
         <span style={{ fontSize: 20, fontWeight: "bold", marginRight: 10 }}>
           "
         </span>
-        {info}
+        {info
+          .split(" ")
+          .slice(0, 30)
+          .join(" ")
+          .concat(info.length > 30 ? "..." : "")}
         <span style={{ fontSize: 20, fontWeight: "bold", marginLeft: 10 }}>
           "
         </span>

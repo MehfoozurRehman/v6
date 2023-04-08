@@ -6,39 +6,47 @@ import TestimonialsCard from "./TestimonialsCard";
 import dayyan from "../assets/dayyan.jpg";
 import hammad from "../assets/hammad.png";
 
-const data = [
+const testimonials = [
   {
     name: "Hammad Habib",
-    designation: "CEO-Crazybeings Studios",
+    designation: "Ceo Crazybeings Studios",
     avatar: hammad,
     message:
-      "I have been working with Mehfooz for over 2 years now and he has been a great asset to our team. He is a very talented developer. He is very professional and always delivers on time.",
+      "I have had the pleasure of working with Mehfooz for over two years, and I must say that he has been an indispensable asset to our team. Mehfooz is an incredibly talented developer who brings a wealth of experience and expertise to every project he works on. He is a consummate professional, always demonstrating the highest levels of integrity, work ethic, and dedication. One of the things that I appreciate most about Mehfooz is his unparalleled attention to detail, which ensures that the projects he works on are of the highest quality. Above all, Mehfooz is someone you can always rely on - he consistently delivers projects on time, every time. I would highly recommend Mehfooz to anyone looking for a top-tier developer who is passionate about his craft and committed to helping his clients achieve their goals.",
   },
   {
     name: "Dayyan Shahid",
-    designation: "CEO-DSME Globals",
+    designation: "Ceo Dsme Globals",
     avatar: dayyan,
     message:
       "Mehfooz is a very talented and has a great eye for design. He is very professional and always delivers on time. I would highly recommend Mehfooz for any web development project.",
   },
+  {
+    name: "blackswanlrn",
+    designation: "Employeer from Fiverr",
+    message:
+      "Mehfooz was very helpful, from beginning to end. He helped me get set up with VS Code Live Share, and then quickly solved one of my bugs/misunderstandings about React. He then patiently and diligently worked through another bug, helping me to understand that my problem was due to the state hook I was using.",
+  },
 ];
 
 const Testimonials = memo(() => {
-  const [slidesPerView, setSlidesPerView] = useState(2);
+  const [slidesPerView, setSlidesPerView] = useState(2.2);
+  const [isMobile, setIsMobile] = useState(false);
 
   function changeSlidesPerView() {
-    if (window.innerWidth < 700) {
-      setSlidesPerView(1);
-    } else if (window.innerWidth < 1000) {
-      setSlidesPerView(1.5);
-    } else {
-      setSlidesPerView(2);
-    }
+    const windowWidth = window.innerWidth;
+    const newSlidesPerView =
+      windowWidth < 700 ? 1 : windowWidth < 1000 ? 1.5 : 2.2;
+    setSlidesPerView(newSlidesPerView);
+    setIsMobile(windowWidth < 800);
   }
 
   useEffect(() => {
     changeSlidesPerView();
     window.addEventListener("resize", changeSlidesPerView);
+    return () => {
+      window.removeEventListener("resize", changeSlidesPerView);
+    };
   }, []);
 
   return (
@@ -49,7 +57,12 @@ const Testimonials = memo(() => {
         </div>
         <div className="home__section__heading">Testimonials</div>
       </div>
-      <div className="services__section__content services__section__content__test">
+      <div
+        className="services__section__content"
+        style={{
+          paddingRight: isMobile ? 0 : "2em",
+        }}
+      >
         <Swiper
           loop={true}
           spaceBetween={30}
@@ -60,7 +73,7 @@ const Testimonials = memo(() => {
             disableOnInteraction: false,
           }}
         >
-          {data?.map((item) => (
+          {testimonials?.map((item) => (
             <SwiperSlide key={JSON.stringify(item)}>
               <TestimonialsCard
                 imageSrc={item.avatar}

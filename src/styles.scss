@@ -611,6 +611,7 @@ body {
   color: var(--text);
   min-height: 50px;
   z-index: 2;
+  line-height: 180%;
   text-transform: capitalize;
   height: fit-content;
   width: 100%;
@@ -926,6 +927,11 @@ body {
     margin-right: 0;
   }
 }
+@media (max-width: 1230px) {
+  .github__calender__wapper {
+    padding: 2em 4em;
+  }
+}
 @media (max-width: 1150px) {
   .about__section__left__content__img {
     max-width: 320px;
@@ -990,6 +996,14 @@ body {
   }
   .header__content__menu {
     display: flex;
+    width: 40px;
+    height: 40px;
+    border-width: 1px;
+  }
+  .header__content__logo__img{
+    width: 57px;
+    margin-top: 10px;
+    height: 57px;
   }
   .header__content__nav {
     position: absolute;
@@ -1003,7 +1017,7 @@ body {
     background-color: var(--secondary);
     border-radius: 10px;
     padding: 2em;
-    box-shadow: 0 0 20px rgba(99, 255, 219, 0.05);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
   }
   .header__content__nav__link {
     width: 100%;
@@ -1052,14 +1066,14 @@ body {
     position: relative;
     max-width: 100%;
   }
+  .github__calender__wapper {
+    display: none;
+  }
 }
 @media (max-width: 580px) {
   .about__section__left__content__img {
     max-width: 280px;
     height: 280px;
-  }
-  .github__calender__wapper {
-    display: none;
   }
   .services__section__content__reverse .services__section__content__col {
     width: 100%;

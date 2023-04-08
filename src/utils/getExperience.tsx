@@ -1,12 +1,5 @@
-export function getExperience(dateString: string) {
-  const date = new Date(dateString);
-  const today = new Date();
-  const diff = today.getTime() - date.getTime();
-  const years = Math.floor(diff / (1000 * 60 * 60 * 24 * 365));
-  const months = Math.floor(
-    (diff - years * (1000 * 60 * 60 * 24 * 365)) / (1000 * 60 * 60 * 24 * 30)
-  );
-  const yearsWithMonths = years + "." + months;
-
-  return parseFloat(yearsWithMonths).toPrecision(1);
+export default function getExperience(dateString: string | number | Date) {
+  const diffInMs = Date.now() - new Date(dateString).getTime();
+  const diffInYears = diffInMs / (1000 * 60 * 60 * 24 * 365);
+  return diffInYears.toPrecision(1);
 }

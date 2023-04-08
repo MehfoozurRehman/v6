@@ -1,10 +1,10 @@
 import { Box, GitHub, Globe, Layout } from "react-feather";
 
-import { fetcher } from "../utils/fetcher";
+import fetcher from "../utils/fetcher";
 import useSWR from "swr";
 
 export default function Archive() {
-  const { data, error } = useSWR(
+  const { data } = useSWR(
     "https://api.github.com/users/MehfoozurRehman/repos?per_page=10000&sort=updated",
     fetcher,
     {
@@ -25,57 +25,53 @@ export default function Archive() {
         <div className="home__section__heading">Archive</div>
       </div>
       <div className="services__section__content" style={{ marginRight: 0 }}>
-        {error ? (
-          <div>failed to load</div>
-        ) : (
-          data
-            ?.filter((item) => item.fork === false)
-            ?.map((item) => (
-              <a
-                key={item.id}
-                href={item.homepage}
-                className="services__section__content__list"
+        {data
+          ?.filter((item) => item.fork === false)
+          ?.map((item) => (
+            <a
+              key={item.id}
+              href={item.homepage}
+              className="services__section__content__list"
+            >
+              <div className="card__heading">
+                {item.homepage && item.homepage !== null ? (
+                  <Layout size={30} color="currentColor" />
+                ) : (
+                  <Box size={30} color="currentColor" />
+                )}
+                <span>{item.name.replace(/-/g, " ").replace(/_/g, " ")}</span>
+              </div>
+              <div
+                className="card__info"
+                style={{
+                  minHeight: "fit-content",
+                }}
               >
-                <div className="card__heading">
-                  {item.homepage && item.homepage !== null ? (
-                    <Layout size={30} color="currentColor" />
-                  ) : (
-                    <Box size={30} color="currentColor" />
-                  )}
-                  <span>{item.name.replace(/-/g, " ").replace(/_/g, " ")}</span>
-                </div>
-                <div
-                  className="card__info"
-                  style={{
-                    minHeight: "fit-content",
-                  }}
+                {item.description}
+              </div>
+              <div className="portfolio__section__content__entry__content">
+                {item.language !== null ? item.language : "HTML"}
+              </div>
+              <div className="portfolio__section__content__entry__buttons">
+                <a
+                  href={item.html_url}
+                  className="portfolio__section__content__entry__button"
                 >
-                  {item.description}
-                </div>
-                <div className="portfolio__section__content__entry__content">
-                  {item.language !== null ? item.language : "HTML"}
-                </div>
-                <div className="portfolio__section__content__entry__buttons">
+                  <GitHub size={20} color="currentColor" />
+                  Github
+                </a>
+                {item.homepage && item.homepage !== null ? (
                   <a
-                    href={item.html_url}
+                    href={item.homepage}
                     className="portfolio__section__content__entry__button"
                   >
-                    <GitHub size={20} color="currentColor" />
-                    Github
+                    <Globe size={20} color="currentColor" />
+                    Website
                   </a>
-                  {item.homepage && item.homepage !== null ? (
-                    <a
-                      href={item.homepage}
-                      className="portfolio__section__content__entry__button"
-                    >
-                      <Globe size={20} color="currentColor" />
-                      Website
-                    </a>
-                  ) : null}
-                </div>
-              </a>
-            ))
-        )}
+                ) : null}
+              </div>
+            </a>
+          ))}
       </div>
     </section>
   );

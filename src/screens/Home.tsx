@@ -7,7 +7,7 @@ import NoteWorthyProjects from "../components/NoteWorthyProjects";
 import Services from "../components/Services";
 import Testimonials from "../components/Testimonials";
 import Work from "../components/Work";
-import { fetcher } from "../utils/fetcher";
+import fetcher from "../utils/fetcher";
 import useSWR from "swr";
 
 export default function Home() {
