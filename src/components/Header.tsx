@@ -1,9 +1,9 @@
 import { Menu, X } from "react-feather";
-import { useEffect, useLayoutEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 import NavLink from "./NavLink";
 import OutsideClickHandler from "react-outside-click-handler";
-import { useNavigate } from "react-router-dom";
+import { useLocation } from "wouter";
 
 const navLinks = [
   {
@@ -34,11 +34,12 @@ const navLinks = [
 ];
 
 export default function Header() {
-  const navigate = useNavigate();
+  const [, navigate] = useLocation();
   const [isNavOpen, setIsNavOpen] = useState(window.innerWidth >= 950);
 
+  const changeNavState = () => setIsNavOpen(window.innerWidth >= 950);
+
   useEffect(() => {
-    const changeNavState = () => setIsNavOpen(window.innerWidth >= 950);
     window.addEventListener("resize", changeNavState);
     return () => window.removeEventListener("resize", changeNavState);
   }, []);
@@ -147,13 +148,6 @@ export default function Header() {
                     Contact
                   </div>
                 </div>
-                <a
-                  href="https://www.buymeacoffee.com/mehfoozurrehman"
-                  className="header__content__nav__link"
-                  target="_blank"
-                >
-                  Buy me a coffee
-                </a>
               </div>
             </OutsideClickHandler>
           </div>

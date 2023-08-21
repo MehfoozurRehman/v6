@@ -10,7 +10,7 @@ const works = [
     banner: aida,
     info: "A website for startup to help companies and freelancers or jobseekers connect with candidates pre curated for companies according to customized requirements of companies",
     siteLink: "https://aida-pro.web.app/",
-    githubLink: "https://github.com/MehfoozurRehman/Aida-Website"
+    githubLink: "https://github.com/MehfoozurRehman/Aida-Website",
   },
   {
     right: true,
@@ -19,7 +19,7 @@ const works = [
     banner: dsmeglobal,
     info: "A website for a startup empowering and helping non technical personal to build creative and intuitive digital identity",
     siteLink: "http://www.dsmeglobal.co/",
-    githubLink: "https://github.com/MehfoozurRehman/dsmeglobal"
+    githubLink: "https://github.com/MehfoozurRehman/dsmeglobal",
   },
   {
     name: "SeeVitals",
@@ -27,8 +27,8 @@ const works = [
     banner: seevitals,
     info: "A website for startup SeeVitals Technologies is an ambitious project brought to life by 3 friends that have recognized the dire need of technological interventions in the healthcare industry. 2 doctors having worked in numerous healthcare setups from around the world understood that the need to optimize the role of nurses and allied hospital sta…",
     siteLink: "http://seevitals.com/",
-    githubLink: "https://github.com/MehfoozurRehman/seevitalsweb"
-  }
+    githubLink: "https://github.com/MehfoozurRehman/seevitalsweb",
+  },
 ];
 
 const Work = memo(() => (
@@ -37,18 +37,18 @@ const Work = memo(() => (
       <div className="home__section__sub__heading">Some Things I’ve Built</div>
       <div className="home__section__heading">Work</div>
     </div>
-      {works.map((work, index) => (
-        <WorkCard
-          key={index}
-          name={work.name}
-          tech={work.tech}
-          banner={work.banner}
-          info={work.info}
-          siteLink={work.siteLink}
-          githubLink={work.githubLink}
-          right={work.right}
-        />
-      ))}
+    {works?.map((work, index) => (
+      <WorkCard
+        key={index}
+        name={work.name}
+        tech={work.tech}
+        banner={work.banner}
+        info={work.info}
+        siteLink={work.siteLink}
+        githubLink={work.githubLink}
+        right={work.right}
+      />
+    ))}
   </section>
 ));
 

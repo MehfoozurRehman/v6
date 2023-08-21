@@ -5,8 +5,7 @@ export default function GithubCalender() {
     <div className="github__calender__wapper">
       <Calendar
         username="mehfoozurrehman"
-        color="#64ffda"
-        showWeekdayLabels
+        blockRadius={5}
         fontSize={14}
         year={new Date().getFullYear()}
         style={{

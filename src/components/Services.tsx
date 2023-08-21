@@ -20,6 +20,7 @@ const services = [
     title: "Backend Development",
     skills: [
       "MongoDB",
+      "PostgreSQL",
       "ExpressJS",
       "NodeJS",
       "Graphql",
@@ -27,6 +28,7 @@ const services = [
       "Firebase",
       "Railway",
       "Heroku",
+      "AWS ec2",
     ],
   },
   {
@@ -43,7 +45,7 @@ export default function Services() {
         <div className="home__section__heading">Services</div>
       </div>
       <div className="services__section__content">
-        {services.map((service, index) => (
+        {services?.map((service, index) => (
           <ServicesCard
             key={index}
             title={service.title}

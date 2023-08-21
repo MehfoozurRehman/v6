@@ -1,16 +1,19 @@
+import useSWR, { preload } from "swr";
+
 import ProjectCard from "./ProjectCard";
 import fetcher from "../utils/fetcher";
-import { useNavigate } from "react-router-dom";
-import useSWR from "swr";
+import { useLocation } from "wouter";
+
+preload(
+  "https://api.github.com/users/MehfoozurRehman/repos?sort=updated",
+  fetcher
+);
 
 export default function NoteWorthyProjects() {
-  const navigate = useNavigate();
+  const [, navigate] = useLocation();
   const { data } = useSWR(
     "https://api.github.com/users/MehfoozurRehman/repos?sort=updated",
-    fetcher,
-    {
-      suspense: true,
-    }
+    fetcher
   );
 
   return (

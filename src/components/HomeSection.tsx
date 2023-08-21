@@ -7,8 +7,8 @@ export default function HomeSection() {
         Let's Build You A <span>Digital Identity</span>
       </div>
       <div className="home__section__info">
-        I'm a Web Developer based in Pakistan. Proficent in web and mobile
-        deveopment. I enjoy turning complex problems into simple, beautiful and
+        I'm a Web Developer based in Pakistan. Proficient in web and mobile
+        development. I enjoy turning complex problems into simple, beautiful and
         intuitive solutions. Working at this time for
         <a href="https://crazybeingstudio.com/" target="_blank">
           Crazybeings Studio

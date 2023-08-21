@@ -13,7 +13,15 @@ export default function ClientCard({ image, name }: ClientCardProps) {
         marginBottom: 0,
       }}
     >
-      <img loading="lazy" src={image} alt={name} className="card__img" />
+      <img
+        loading="lazy"
+        src={image}
+        alt={name}
+        className="card__img"
+        style={{
+          minHeight: 100,
+        }}
+      />
     </div>
   );
 }

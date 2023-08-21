@@ -8,18 +8,18 @@ import hammad from "../assets/hammad.png";
 
 const testimonials = [
   {
-    name: "Hammad Habib",
-    designation: "Ceo Crazybeings Studios",
-    avatar: hammad,
-    message:
-      "I have had the pleasure of working with Mehfooz for over two years, and I must say that he has been an indispensable asset to our team. Mehfooz is an incredibly talented developer who brings a wealth of experience and expertise to every project he works on. He is a consummate professional, always demonstrating the highest levels of integrity, work ethic, and dedication. One of the things that I appreciate most about Mehfooz is his unparalleled attention to detail, which ensures that the projects he works on are of the highest quality. Above all, Mehfooz is someone you can always rely on - he consistently delivers projects on time, every time. I would highly recommend Mehfooz to anyone looking for a top-tier developer who is passionate about his craft and committed to helping his clients achieve their goals.",
-  },
-  {
     name: "Dayyan Shahid",
     designation: "Ceo Dsme Globals",
     avatar: dayyan,
     message:
       "Mehfooz is a very talented and has a great eye for design. He is very professional and always delivers on time. I would highly recommend Mehfooz for any web development project.",
+  },
+  {
+    name: "Hammad Habib",
+    designation: "Ceo Crazybeings Studios",
+    avatar: hammad,
+    message:
+      "I have had the pleasure of working with Mehfooz for over two years, and I must say that he has been an indispensable asset to our team. Mehfooz is an incredibly talented developer who brings a wealth of experience and expertise to every project he works on. He is a consummate professional, always demonstrating the highest levels of integrity, work ethic, and dedication. One of the things that I appreciate most about Mehfooz is his unparalleled attention to detail, which ensures that the projects he works on are of the highest quality. Above all, Mehfooz is someone you can always rely on - he consistently delivers projects on time, every time. I would highly recommend Mehfooz to anyone looking for a top-tier developer who is passionate about his craft and committed to helping his clients achieve their goals.",
   },
   {
     name: "blackswanlrn",
@@ -30,15 +30,22 @@ const testimonials = [
 ];
 
 const Testimonials = memo(() => {
-  const [slidesPerView, setSlidesPerView] = useState(2.2);
+  const [slidesPerView, setSlidesPerView] = useState(2);
   const [isMobile, setIsMobile] = useState(false);
 
   function changeSlidesPerView() {
     const windowWidth = window.innerWidth;
-    const newSlidesPerView =
-      windowWidth < 700 ? 1 : windowWidth < 1000 ? 1.5 : 2.2;
-    setSlidesPerView(newSlidesPerView);
-    setIsMobile(windowWidth < 800);
+
+    if (windowWidth < 700) {
+      setSlidesPerView(1);
+      setIsMobile(true);
+    } else if (windowWidth < 1000) {
+      setSlidesPerView(1.5);
+      setIsMobile(true);
+    } else {
+      setSlidesPerView(2);
+      setIsMobile(false);
+    }
   }
 
   useEffect(() => {
@@ -64,17 +71,16 @@ const Testimonials = memo(() => {
         }}
       >
         <Swiper
-          loop={true}
+          slidesPerView={slidesPerView}
           spaceBetween={30}
           modules={[Autoplay]}
-          slidesPerView={slidesPerView}
           autoplay={{
             delay: 3000,
             disableOnInteraction: false,
           }}
         >
-          {testimonials?.map((item) => (
-            <SwiperSlide key={JSON.stringify(item)}>
+          {testimonials?.map((item, index) => (
+            <SwiperSlide key={index}>
               <TestimonialsCard
                 imageSrc={item.avatar}
                 title={item.name}

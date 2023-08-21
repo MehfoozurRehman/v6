@@ -1,8 +1,11 @@
+import useSWR, { preload } from "swr";
+
 import fetcher from "../utils/fetcher";
 import getExperience from "../utils/getExperience";
 import { memo } from "react";
 import { pic } from "../assets";
-import useSWR from "swr";
+
+preload("https://api.github.com/users/MehfoozurRehman", fetcher);
 
 interface AboutMeProps {
   happyClients: any;
@@ -11,10 +14,7 @@ interface AboutMeProps {
 const AboutMe = memo(({ happyClients }: AboutMeProps) => {
   const { data } = useSWR(
     "https://api.github.com/users/MehfoozurRehman",
-    fetcher,
-    {
-      suspense: true,
-    }
+    fetcher
   );
 
   return (
@@ -41,7 +41,8 @@ const AboutMe = memo(({ happyClients }: AboutMeProps) => {
               ></path>
             </svg>
             <div className="about__section__left__content__blob__content">
-              {data?.public_repos} +<span>Projects Completed</span>
+              {data?.public_repos + data?.total_private_repos} +
+              <span>Projects Completed</span>
             </div>
           </div>
           <div className="about__section__left__content__blob">
