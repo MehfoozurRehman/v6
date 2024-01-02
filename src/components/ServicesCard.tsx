@@ -10,7 +10,7 @@ const ServicesCard = memo(({ title, skills }: ServicesCardProps) => (
     <div className="card__heading">{title}</div>
     <div className="card__info">
       {skills?.map((skill, i) =>
-        i !== skills.length - 1 ? skill + ", " : skill
+        i !== skills.length - 1 ? skill + ", " : skill,
       )}
     </div>
   </div>

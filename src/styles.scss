@@ -52,7 +52,7 @@ body {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  max-width: 1600px;
+  max-width: 1650px;
   position: relative;
   margin: 0 auto;
   animation: fadeInAnimation ease 1s;
@@ -118,7 +118,7 @@ body {
   align-items: center;
   margin: 0 auto;
   padding: 1.5em 2em;
-  max-width: 1600px;
+  max-width: 1650px;
   position: relative;
 }
 .header__content__logo {
@@ -271,7 +271,7 @@ body {
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1300px;
   padding: 10em 2em;
   padding-bottom: 0;
   min-height: fit-content;
@@ -321,7 +321,7 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1300px;
   padding: 8em 2em;
   overflow-x: hidden;
 }
@@ -414,7 +414,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1300px;
   padding: 8em 2em;
   overflow-x: hidden;
   margin-top: -8em;
@@ -681,7 +681,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1300px;
   padding: 8em 2em;
   overflow-x: hidden;
   margin-top: -8em;
@@ -793,7 +793,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1300px;
   padding: 5em 2em;
   overflow-x: hidden;
   margin: 0 auto;
@@ -896,7 +896,7 @@ body {
   font-size: 20px;
   margin-top: 1em;
 }
-@media (max-width: 1440px) {
+@media (max-width: 1650px) {
   .social__links {
     left: 2em;
   }
@@ -905,6 +905,12 @@ body {
   }
 }
 @media (max-width: 1300px) {
+  .footer__content {
+    padding: 5em 6em;
+  }
+  .footer__content__button {
+    right: 4em;
+  }
   .home__section {
     padding: 7em 6em;
     padding-bottom: 0;
@@ -948,12 +954,6 @@ body {
   }
   .services__section__content__reverse .card {
     margin-right: 2em;
-  }
-  .footer__content {
-    padding: 5em 6em;
-  }
-  .footer__content__button {
-    right: 4em;
   }
 }
 @media (max-width: 1100px) {
@@ -1000,7 +1000,7 @@ body {
     height: 40px;
     border-width: 1px;
   }
-  .header__content__logo__img{
+  .header__content__logo__img {
     width: 57px;
     margin-top: 10px;
     height: 57px;

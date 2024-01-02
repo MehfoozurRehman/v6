@@ -4,12 +4,9 @@ import fetcher from "../utils/fetcher";
 import useSWR from "swr";
 
 export default function Archive() {
-  const { data } = useSWR(
+  const { data, isLoading } = useSWR(
     "https://api.github.com/users/MehfoozurRehman/repos?per_page=10000&sort=updated",
-    fetcher,
-    {
-      suspense: true,
-    }
+    fetcher
   );
 
   return (
@@ -24,11 +21,24 @@ export default function Archive() {
         </div>
         <div className="home__section__heading">Archive</div>
       </div>
+      {isLoading && (
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            height: "100vh",
+            color: "#64ffda",
+          }}
+        >
+          Loading...
+        </div>
+      )}
       {data !== undefined && (
         <div className="services__section__content" style={{ marginRight: 0 }}>
           {data
-            ?.filter((item) => item.fork === false)
-            ?.map((item) => (
+            ?.filter((item: { fork: boolean }) => item.fork === false)
+            ?.map((item: any) => (
               <div key={item.id} className="services__section__content__list">
                 <div className="card__heading">
                   {item.homepage && item.homepage !== null ? (
@@ -40,9 +50,7 @@ export default function Archive() {
                 </div>
                 <div
                   className="card__info"
-                  style={{
-                    minHeight: "fit-content",
-                  }}
+                  style={{ minHeight: "fit-content" }}
                 >
                   {item.description}
                 </div>
@@ -57,7 +65,7 @@ export default function Archive() {
                     <GitHub size={20} color="currentColor" />
                     Github
                   </a>
-                  {item.homepage && item.homepage !== null ? (
+                  {item.homepage && item.homepage !== null && (
                     <a
                       href={item.homepage}
                       className="portfolio__section__content__entry__button"
@@ -65,7 +73,7 @@ export default function Archive() {
                       <Globe size={20} color="currentColor" />
                       Website
                     </a>
-                  ) : null}
+                  )}
                 </div>
               </div>
             ))}

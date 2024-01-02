@@ -6,7 +6,12 @@ interface InputBoxProps {
   name: string;
 }
 
-export default function InputBox({ placeholder, type, name, ...props }: InputBoxProps) {
+export default function InputBox({
+  placeholder,
+  type,
+  name,
+  ...props
+}: InputBoxProps) {
   const [onFucus, setOnFocus] = useState(false);
   const [value, setValue] = useState("");
   return (

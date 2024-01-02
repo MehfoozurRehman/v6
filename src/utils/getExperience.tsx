@@ -1,5 +1,4 @@
 import dayjs from "dayjs";
 
-export default function getExperience(dateString: string | number | Date) {
-  return dayjs().diff(dayjs(dateString), "year");
-}
+export default (dateString: string | number | Date) =>
+  Math.round(dayjs().diff(dayjs(dateString), "months") / 12);

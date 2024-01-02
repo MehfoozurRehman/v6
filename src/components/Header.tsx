@@ -23,10 +23,10 @@ const navLinks = [
     label: "Work",
     scrollTo: "work",
   },
-  {
-    label: "Clients",
-    scrollTo: "clients",
-  },
+  // {
+  //   label: "Clients",
+  //   scrollTo: "clients",
+  // },
   {
     label: "Testimonials",
     scrollTo: "testimonials",
