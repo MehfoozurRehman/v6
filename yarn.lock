@@ -931,6 +931,13 @@
   dependencies:
     regenerator-runtime "^0.14.0"
 
+"@babel/runtime@^7.12.5":
+  version "7.23.8"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.23.8.tgz#8ee6fe1ac47add7122902f257b8ddf55c898f650"
+  integrity sha512-Y7KbAP984rn1VGMbGqKmBLio9V7y5Je9GvU4rQPCPinCyNfUcToxIXl06d59URp/F3LwinvODxab5N/G6qggkw==
+  dependencies:
+    regenerator-runtime "^0.14.0"
+
 "@babel/template@^7.22.15":
   version "7.22.15"
   resolved "https://registry.yarnpkg.com/@babel/template/-/template-7.22.15.tgz#09576efc3830f0430f4548ef971dde1350ef2f38"
@@ -4307,6 +4314,13 @@ react-dom@^18.2.0:
     loose-envify "^1.1.0"
     scheduler "^0.23.0"
 
+react-error-boundary@^4.0.12:
+  version "4.0.12"
+  resolved "https://registry.yarnpkg.com/react-error-boundary/-/react-error-boundary-4.0.12.tgz#59f8f1dbc53bbbb34fc384c8db7cf4082cb63e2c"
+  integrity sha512-kJdxdEYlb7CPC1A0SeUY38cHpjuu6UkvzKiAmqmOFL21VRfMhOcWxTCBgLVCO0VEMh9JhFNcVaXlV4/BTpiwOA==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+
 react-feather@^2.0.10:
   version "2.0.10"
   resolved "https://registry.yarnpkg.com/react-feather/-/react-feather-2.0.10.tgz#0e9abf05a66754f7b7bb71757ac4da7fb6be3b68"
@@ -4314,12 +4328,13 @@ react-feather@^2.0.10:
   dependencies:
     prop-types "^15.7.2"
 
-react-github-calendar@^4.0.10:
-  version "4.0.10"
-  resolved "https://registry.yarnpkg.com/react-github-calendar/-/react-github-calendar-4.0.10.tgz#aa58868aa7f484724b29d2bd580cbada2fb55c7c"
-  integrity sha512-WcVAaVTaY13vbszGQY+WCJ1wK69W+kWZ1yKcewRDbeXf2OMz8oVeMYXv1xV33VP+kcKKRTMXtrW4Uoo0QZYsUw==
+react-github-calendar@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/react-github-calendar/-/react-github-calendar-4.1.1.tgz#7954c61ade949b65a9f0bffa02473e7682578944"
+  integrity sha512-ddGl/a/+NGWNogKWFrmib0kLNTT5/POj+MK586sOFBtwL+xz5LSE8LKi2l6n+vAlezMGXkZmgBg3L5RkINmeeQ==
   dependencies:
     react-activity-calendar "^2.2.5"
+    react-error-boundary "^4.0.12"
 
 react-is@^16.12.0, react-is@^16.13.1:
   version "16.13.1"
