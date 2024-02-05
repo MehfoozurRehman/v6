@@ -4319,10 +4319,10 @@ react-feather@^2.0.10:
   dependencies:
     prop-types "^15.7.2"
 
-react-github-calendar@^4.1.1:
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/react-github-calendar/-/react-github-calendar-4.1.1.tgz#7954c61ade949b65a9f0bffa02473e7682578944"
-  integrity sha512-ddGl/a/+NGWNogKWFrmib0kLNTT5/POj+MK586sOFBtwL+xz5LSE8LKi2l6n+vAlezMGXkZmgBg3L5RkINmeeQ==
+react-github-calendar@^4.1.2:
+  version "4.1.2"
+  resolved "https://registry.yarnpkg.com/react-github-calendar/-/react-github-calendar-4.1.2.tgz#ac76dc8eefa1ee10900cac4e17b2fd8d0b92a76d"
+  integrity sha512-tSqugswiJk4YtTGkmnF50mSEjFIBew6hGanuqWvAmulS7hFF3VJ+UQlu5p6UybAVeRUFz2C1Eaq/nhcIIZhA0A==
   dependencies:
     react-activity-calendar "^2.2.5"
     react-error-boundary "^4.0.12"
