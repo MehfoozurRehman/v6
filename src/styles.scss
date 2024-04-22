@@ -35,7 +35,6 @@ body {
   align-items: center;
   background-color: var(--secondary);
 }
-
 @keyframes fadeInAnimation {
   0% {
     opacity: 0;
@@ -216,7 +215,7 @@ body {
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  padding: 0em 1.5em;
+  padding: 0 1.5em;
   margin-left: 1em;
   text-align: center;
 }
@@ -265,7 +264,6 @@ body {
   background-color: var(--hover);
   color: var(--white);
 }
-
 .home__section {
   display: flex;
   flex-direction: column;
@@ -523,7 +521,7 @@ body {
 .services__section__content__right__form__input__field:-webkit-autofill:hover,
 .services__section__content__right__form__input__field:-webkit-autofill:focus {
   -webkit-text-fill-color: var(--white);
-  -webkit-box-shadow: 0 0 0px 1000px var(--secondary-dark) inset;
+  -webkit-box-shadow: 0 0 0 1000px var(--secondary-dark) inset;
   transition: background-color 5000s ease-in-out 0s;
 }
 .services__section__content__right__form__input__field__textarea {
@@ -773,7 +771,6 @@ body {
 #loading {
   animation: loader 3s infinite linear;
 }
-
 @keyframes loader {
   0% {
     fill: transparent;
@@ -963,7 +960,6 @@ body {
     align-items: flex-start;
     padding: 8em 6em;
   }
-
   .about__section__left {
     width: 100%;
     margin-right: 0;
@@ -1017,7 +1013,7 @@ body {
     background-color: var(--secondary);
     border-radius: 10px;
     padding: 2em;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   }
   .header__content__nav__link {
     width: 100%;
@@ -1038,7 +1034,7 @@ body {
     width: 100%;
   }
   .header__content__nav__link {
-    margin-left: 0em;
+    margin-left: 0;
     margin-top: 1em;
     border-radius: 5px;
     padding: 0.5em 1em;
