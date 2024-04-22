@@ -1,20 +1,20 @@
 export const testimonials = [
   {
     name: "Dayyan Shahid",
-    designation: "Ceo Dsme Globals",
+    designation: "CEO, DSME Globals",
     message:
-      "Mehfooz is a very talented and has a great eye for design. He is very professional and always delivers on time. I would highly recommend Mehfooz for any web development project.",
+      "Mehfooz possesses remarkable design skills and professionalism. His timely deliveries and exceptional work make him a highly recommended choice for any web development endeavor.",
   },
   {
     name: "Hammad Habib",
-    designation: "Ceo Crazybeings Studios",
+    designation: "CEO, Crazybeings Studios",
     message:
-      "I have had the pleasure of working with Mehfooz for over two years, and I must say that he has been an indispensable asset to our team. Mehfooz is an incredibly talented developer who brings a wealth of experience and expertise to every project he works on. He is a consummate professional, always demonstrating the highest levels of integrity, work ethic, and dedication. One of the things that I appreciate most about Mehfooz is his unparalleled attention to detail, which ensures that the projects he works on are of the highest quality. Above all, Mehfooz is someone you can always rely on - he consistently delivers projects on time, every time. I would highly recommend Mehfooz to anyone looking for a top-tier developer who is passionate about his craft and committed to helping his clients achieve their goals.",
+      "Working with Mehfooz has been invaluable to our team's success. His extensive experience and attention to detail ensure that every project is of the utmost quality. Mehfooz's commitment to meeting deadlines and exceeding expectations make him an outstanding developer.",
   },
   {
     name: "blackswanlrn",
-    designation: "Employeer from Fiverr",
+    designation: "Employer from Fiverr",
     message:
-      "Mehfooz was very helpful, from beginning to end. He helped me get set up with VS Code Live Share, and then quickly solved one of my bugs/misunderstandings about React. He then patiently and diligently worked through another bug, helping me to understand that my problem was due to the state hook I was using.",
+      "Mehfooz provided invaluable assistance, quickly resolving bugs and providing insightful solutions. His patience and diligence were evident throughout the process, making him a reliable and knowledgeable resource for any project.",
   },
 ];
