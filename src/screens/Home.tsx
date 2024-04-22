@@ -4,7 +4,6 @@ import { useEffect, useRef, useState } from "react";
 import useSWR, { preload } from "swr";
 
 import Calendar from "react-github-calendar";
-// import ClientCard from "../components/ClientCard";
 import InputBox from "../components/InputBox";
 import ProjectCard from "../components/ProjectCard";
 import ServicesCard from "../components/ServicesCard";
@@ -19,6 +18,8 @@ import { services } from "../data/services";
 import { testimonials } from "../data/testimonials";
 import { useLocation } from "wouter";
 import { works } from "../data/works";
+
+// import ClientCard from "../components/ClientCard";
 
 preload("https://api.github.com/users/MehfoozurRehman", fetcher);
 preload(
