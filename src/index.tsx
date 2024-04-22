@@ -33,7 +33,7 @@ export function App() {
         </Suspense>
       ) : (
         <div className="offline">
-          <Server size={40} color="#64ffda" />
+          <Server size={40} color="var(--primary)" />
           <div className="offline__heading">Oops! You are offline</div>
         </div>
       )}
