@@ -1590,6 +1590,11 @@
   dependencies:
     undici-types "~5.26.4"
 
+"@types/prismjs@^1.26.0":
+  version "1.26.4"
+  resolved "https://registry.yarnpkg.com/@types/prismjs/-/prismjs-1.26.4.tgz#1a9e1074619ce1d7322669e5b46fbe823925103a"
+  integrity sha512-rlAnzkW2sZOjbqZ743IHUhFcvzaGbqijwOu8QZnZCjfQzBqFE3s4lOTJEsxikImav9uzz/42I+O7YUs1mWgMlg==
+
 "@types/prop-types@*":
   version "15.7.11"
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.11.tgz#2596fb352ee96a1379c657734d4b913a613ad563"
@@ -2072,6 +2077,11 @@ clone-response@1.0.2:
   dependencies:
     mimic-response "^1.0.0"
 
+clsx@^2.0.0:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/clsx/-/clsx-2.1.1.tgz#eed397c9fd8bd882bfb18deab7102049a2f32999"
+  integrity sha512-eYm0QWBtUrBWZWG0d386OGAw16Z995PiOVo2B7bjWSbHedGl5e0ZWaq65kOGgUSNesEIDkB9ISbTg/JK9dhCZA==
+
 color-convert@^1.9.0:
   version "1.9.3"
   resolved "https://registry.yarnpkg.com/color-convert/-/color-convert-1.9.3.tgz#bb71850690e1f136567de629d2d5471deda4c1e8"
@@ -2250,10 +2260,10 @@ cwebp-bin@^6.0.0:
     bin-build "^3.0.0"
     bin-wrapper "^4.0.1"
 
-date-fns@^3.2.0:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-3.2.0.tgz#c97cf685b62c829aa4ecba554e4a51768cf0bffc"
-  integrity sha512-E4KWKavANzeuusPi0jUjpuI22SURAznGkx7eZV+4i6x2A+IZxAMcajgkvuDAU1bg40+xuhW1zRdVIIM/4khuIg==
+date-fns@^3.6.0:
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-3.6.0.tgz#f20ca4fe94f8b754951b24240676e8618c0206bf"
+  integrity sha512-fRHTG8g/Gif+kSh50gaGEdToemgfj74aRX3swtiouboip5JDLAyDE9F11nHMIcvOaXeOC6D7SpNhi7uFyB7Uww==
 
 dayjs@^1.11.11:
   version "1.11.11"
@@ -4410,6 +4420,14 @@ pretty-bytes@^6.1.1:
   resolved "https://registry.yarnpkg.com/pretty-bytes/-/pretty-bytes-6.1.1.tgz#38cd6bb46f47afbf667c202cfc754bffd2016a3b"
   integrity sha512-mQUvGU6aUFQ+rNvTIAcZuWGRT9a6f6Yrg9bHs4ImKF+HZCEK+plBvnAZYSIQztknZF2qnzNtr6F8s0+IuptdlQ==
 
+prism-react-renderer@^2.3.1:
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/prism-react-renderer/-/prism-react-renderer-2.3.1.tgz#e59e5450052ede17488f6bc85de1553f584ff8d5"
+  integrity sha512-Rdf+HzBLR7KYjzpJ1rSoxT9ioO85nZngQEoFIhL07XhtJHlCU3SOz0GJ6+qvMyQe0Se+BV3qpe6Yd/NmQF5Juw==
+  dependencies:
+    "@types/prismjs" "^1.26.0"
+    clsx "^2.0.0"
+
 process-nextick-args@~2.0.0:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/process-nextick-args/-/process-nextick-args-2.0.1.tgz#7820d9b16120cc55ca9ae7792680ae7dba6d7fe2"
@@ -4482,14 +4500,15 @@ randombytes@^2.1.0:
   dependencies:
     safe-buffer "^5.1.0"
 
-react-activity-calendar@^2.2.8:
-  version "2.2.8"
-  resolved "https://registry.yarnpkg.com/react-activity-calendar/-/react-activity-calendar-2.2.8.tgz#8742d607588f1b17d094fd09c96832b4f781beb2"
-  integrity sha512-+Zr6UlPC4zLMSkXyg/+bQ0Fd10E8V+nT+AU0FHfCIQi6/dLJe73cR+CkFFf8zPE59XhGO24U7FfUyFgbWqV0Bg==
+react-activity-calendar@^2.2.11:
+  version "2.2.11"
+  resolved "https://registry.yarnpkg.com/react-activity-calendar/-/react-activity-calendar-2.2.11.tgz#1fda05ee4000f9fa7eca2f3c08ca7e02644931c5"
+  integrity sha512-KblrtieAiUCT3Tn549mD6b5C+CaUJUN26NuBFc277s29HlUPI5bu0HSkpqP0LVicNX+Ng8apkyOgnbQpxQpnYg==
   dependencies:
     "@types/chroma-js" "^2.4.3"
     chroma-js "^2.4.2"
-    date-fns "^3.2.0"
+    date-fns "^3.6.0"
+    prism-react-renderer "^2.3.1"
 
 react-dom@^18.3.1:
   version "18.3.1"
@@ -4513,12 +4532,12 @@ react-feather@^2.0.10:
   dependencies:
     prop-types "^15.7.2"
 
-react-github-calendar@^4.1.5:
-  version "4.1.5"
-  resolved "https://registry.yarnpkg.com/react-github-calendar/-/react-github-calendar-4.1.5.tgz#8c5d44115c352fbac106006a34676328c189628f"
-  integrity sha512-l3Uzt2TnDdFGeKSpqpbX1rwIYydQLmVk4kjS6lpBhtbKAG1ejVRLbqM1TJhLgRIzORlouzGz94sis3trCiTi7A==
+react-github-calendar@^4.1.6:
+  version "4.1.6"
+  resolved "https://registry.yarnpkg.com/react-github-calendar/-/react-github-calendar-4.1.6.tgz#7bb0bf2f6f85164b23e13320a6bfda9c25084b83"
+  integrity sha512-/b7NYXyTJIdQFBHIQ3VV76901k4QhiqzFNGRZFAsq99rjBQeMj0aj5sITR2USv3d8LL8RetdFjrrfS9v29Q21w==
   dependencies:
-    react-activity-calendar "^2.2.8"
+    react-activity-calendar "^2.2.11"
     react-error-boundary "^4.0.12"
 
 react-is@^16.12.0, react-is@^16.13.1:
