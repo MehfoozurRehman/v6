@@ -5725,10 +5725,10 @@ workbox-window@7.1.0, workbox-window@^7.1.0:
     "@types/trusted-types" "^2.0.2"
     workbox-core "7.1.0"
 
-wouter@^3.2.0:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/wouter/-/wouter-3.2.0.tgz#11dc10a7e02bb4895a76c3743c04232a383a99be"
-  integrity sha512-6g+5H4zYcGtqSte99EpZbgaZNfl1M9H5wk6fLwZ1p5vPRvsDdk4LqRKVz3ka0KHBcire4IuaFvM2zRsgt16t6g==
+wouter@^3.2.1:
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/wouter/-/wouter-3.2.1.tgz#3546d191be46cfbda9273417e392b9fa2736f99e"
+  integrity sha512-IrG8rga52VoKeieKykbCDY2hZZH92RbCdF6Y48OaLLwFc7xS28vBb9JFZbDDLAPCDkLjSyVM2okLCjNP7ktM9Q==
   dependencies:
     mitt "^3.0.1"
     regexparam "^3.0.0"
