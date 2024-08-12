@@ -2250,10 +2250,10 @@ cwebp-bin@^6.0.0:
     bin-build "^3.0.0"
     bin-wrapper "^4.0.1"
 
-date-fns@^3.2.0:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-3.2.0.tgz#c97cf685b62c829aa4ecba554e4a51768cf0bffc"
-  integrity sha512-E4KWKavANzeuusPi0jUjpuI22SURAznGkx7eZV+4i6x2A+IZxAMcajgkvuDAU1bg40+xuhW1zRdVIIM/4khuIg==
+date-fns@^3.6.0:
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-3.6.0.tgz#f20ca4fe94f8b754951b24240676e8618c0206bf"
+  integrity sha512-fRHTG8g/Gif+kSh50gaGEdToemgfj74aRX3swtiouboip5JDLAyDE9F11nHMIcvOaXeOC6D7SpNhi7uFyB7Uww==
 
 dayjs@^1.11.11:
   version "1.11.11"
@@ -4482,14 +4482,14 @@ randombytes@^2.1.0:
   dependencies:
     safe-buffer "^5.1.0"
 
-react-activity-calendar@^2.2.8:
-  version "2.2.8"
-  resolved "https://registry.yarnpkg.com/react-activity-calendar/-/react-activity-calendar-2.2.8.tgz#8742d607588f1b17d094fd09c96832b4f781beb2"
-  integrity sha512-+Zr6UlPC4zLMSkXyg/+bQ0Fd10E8V+nT+AU0FHfCIQi6/dLJe73cR+CkFFf8zPE59XhGO24U7FfUyFgbWqV0Bg==
+react-activity-calendar@^2.3.5:
+  version "2.3.5"
+  resolved "https://registry.yarnpkg.com/react-activity-calendar/-/react-activity-calendar-2.3.5.tgz#dba85877696edf9a2dd2c6ecbe1cfea071a4f401"
+  integrity sha512-ky4L2kbfjCzbY/e2yfsX8jhCsgLKZW70OL1lYR8XsEihYGucYnYimgJUUKiwj3GBTNfgFuZYSZUBxEnc4M0brA==
   dependencies:
     "@types/chroma-js" "^2.4.3"
     chroma-js "^2.4.2"
-    date-fns "^3.2.0"
+    date-fns "^3.6.0"
 
 react-dom@^18.3.1:
   version "18.3.1"
@@ -4513,12 +4513,12 @@ react-feather@^2.0.10:
   dependencies:
     prop-types "^15.7.2"
 
-react-github-calendar@^4.1.5:
-  version "4.1.5"
-  resolved "https://registry.yarnpkg.com/react-github-calendar/-/react-github-calendar-4.1.5.tgz#8c5d44115c352fbac106006a34676328c189628f"
-  integrity sha512-l3Uzt2TnDdFGeKSpqpbX1rwIYydQLmVk4kjS6lpBhtbKAG1ejVRLbqM1TJhLgRIzORlouzGz94sis3trCiTi7A==
+react-github-calendar@^4.2.2:
+  version "4.2.2"
+  resolved "https://registry.yarnpkg.com/react-github-calendar/-/react-github-calendar-4.2.2.tgz#c03852dfa4fb621ec46a2cae02e88863d8ce9597"
+  integrity sha512-Fy8KrOq9H3CpHxWYTTDxx3GQgBLywu8t+OuBQR/X/KtyXGCxAhH+gTCtedSiZZUDXDVzncfetZCyKLxsHRWErw==
   dependencies:
-    react-activity-calendar "^2.2.8"
+    react-activity-calendar "^2.3.5"
     react-error-boundary "^4.0.12"
 
 react-is@^16.12.0, react-is@^16.13.1:
