@@ -2053,10 +2053,10 @@ chalk@^4.0.2, chalk@^4.1.2:
   optionalDependencies:
     fsevents "~2.3.2"
 
-chroma-js@^2.4.2:
-  version "2.4.2"
-  resolved "https://registry.yarnpkg.com/chroma-js/-/chroma-js-2.4.2.tgz#dffc214ed0c11fa8eefca2c36651d8e57cbfb2b0"
-  integrity sha512-U9eDw6+wt7V8z5NncY2jJfZa+hUH8XEj8FQHgFJTrUFnJfXYf4Ml4adI2vXZOjqRDpFWtYVWypDfZwnJ+HIR4A==
+chroma-js@^3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/chroma-js/-/chroma-js-3.1.1.tgz#380103ce1f8bb119be2b18303d598b3c113cf6b1"
+  integrity sha512-CGr6w73Gi86142RWqZ1RjED/CyduYw2vMTikQZUvr2jGIihnZlMo/Kzm9rYHWDP2pJc6eebwc8CkX0iteBon+A==
 
 clean-css@^5:
   version "5.3.3"
@@ -2255,10 +2255,10 @@ cwebp-bin@^6.0.0:
     bin-build "^3.0.0"
     bin-wrapper "^4.0.1"
 
-date-fns@^3.6.0:
-  version "3.6.0"
-  resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-3.6.0.tgz#f20ca4fe94f8b754951b24240676e8618c0206bf"
-  integrity sha512-fRHTG8g/Gif+kSh50gaGEdToemgfj74aRX3swtiouboip5JDLAyDE9F11nHMIcvOaXeOC6D7SpNhi7uFyB7Uww==
+date-fns@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-4.1.0.tgz#64b3d83fff5aa80438f5b1a633c2e83b8a1c2d14"
+  integrity sha512-Ukq0owbQXxa/U3EGtsdVBkR1w7KOQ5gIBqdH2hkvknzZPYvBxb/aa6E8L7tmjFtkwZBu3UXBbjIgPo/Ez4xaNg==
 
 dayjs@^1.11.13:
   version "1.11.13"
@@ -4496,14 +4496,14 @@ randombytes@^2.1.0:
   dependencies:
     safe-buffer "^5.1.0"
 
-react-activity-calendar@^2.5.1:
-  version "2.5.1"
-  resolved "https://registry.yarnpkg.com/react-activity-calendar/-/react-activity-calendar-2.5.1.tgz#9d1064857ec6901150781e88b21c324034ffbdab"
-  integrity sha512-O+5d8XHaxeaBnohCC5o69w3DO1VAwZuLK96bwwUmvtOMi/LBQ3SIHRMg0fBHZzo+5cofxqXkPEnikZkrZHAk1A==
+react-activity-calendar@^2.5.2:
+  version "2.5.2"
+  resolved "https://registry.yarnpkg.com/react-activity-calendar/-/react-activity-calendar-2.5.2.tgz#2fc850b88e1c9572066fc76e93535e852f124f78"
+  integrity sha512-iIV3CvjajyjYi8ZBvaNLW4lfnOiayF3zfkyek/ET0Ea+lu30kdYORPQdvCqu+vdw0E7Nvgq8IBygSoM1j1U8PA==
   dependencies:
     "@types/chroma-js" "^2.4.3"
-    chroma-js "^2.4.2"
-    date-fns "^3.6.0"
+    chroma-js "^3.1.1"
+    date-fns "^4.1.0"
 
 react-dom@^18.3.1:
   version "18.3.1"
@@ -4527,12 +4527,12 @@ react-feather@^2.0.10:
   dependencies:
     prop-types "^15.7.2"
 
-react-github-calendar@^4.3.0:
-  version "4.3.0"
-  resolved "https://registry.yarnpkg.com/react-github-calendar/-/react-github-calendar-4.3.0.tgz#8b6c7146f29f07dc7d47a34f093d65b8808e803f"
-  integrity sha512-WgZUMAkvLVz4t99Dif/1S5BeydbJaTUYNfljDz5e7NOSfTzql+n6Weud2W86DFNxz4LLF6UuDbtkm2tvICZSKw==
+react-github-calendar@^4.3.1:
+  version "4.3.1"
+  resolved "https://registry.yarnpkg.com/react-github-calendar/-/react-github-calendar-4.3.1.tgz#f6c2db70488f8607d4dca7c71e51f287d46e2f8b"
+  integrity sha512-9rgUodw84RrR3i0El2iU8cq+6dI/Qk7PPdkfj+bRZEfO9gdNjuNdJfrEtZWHZ0MIeTXK5/9KHMdco6OJcXS6dQ==
   dependencies:
-    react-activity-calendar "^2.5.1"
+    react-activity-calendar "^2.5.2"
     react-error-boundary "^4.0.12"
 
 react-is@^16.12.0, react-is@^16.13.1:
