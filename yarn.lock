@@ -4576,10 +4576,10 @@ randombytes@^2.1.0:
   dependencies:
     safe-buffer "^5.1.0"
 
-react-activity-calendar@^2.6.3:
-  version "2.6.3"
-  resolved "https://registry.yarnpkg.com/react-activity-calendar/-/react-activity-calendar-2.6.3.tgz#1782cc4bd346be9ea9d01baa219a0b49ba5e6268"
-  integrity sha512-FlBOuH2KnoOxYPMKjPMAJOdGjThbeGNMRTyS3UgrRHoKnb9izebFbrwcRSl8BSdXVnxB5N8OQ+8kWrwXvk/zNg==
+react-activity-calendar@^2.7.1:
+  version "2.7.1"
+  resolved "https://registry.yarnpkg.com/react-activity-calendar/-/react-activity-calendar-2.7.1.tgz#399555b95b5bced76a6f5f16c00698c98e0e17df"
+  integrity sha512-leYmZpQs73ajg1dXP1XE2hd4cCPhV/pjWsO08S20oI9jcgyTt/JKKLHjbt6pF8rdPnEU630nBwQF9Jqw981nnQ==
   dependencies:
     date-fns "^4.1.0"
 
@@ -4591,7 +4591,7 @@ react-dom@^18.3.1:
     loose-envify "^1.1.0"
     scheduler "^0.23.2"
 
-react-error-boundary@^4.1.1:
+react-error-boundary@^4.1.2:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/react-error-boundary/-/react-error-boundary-4.1.2.tgz#bc750ad962edb8b135d6ae922c046051eb58f289"
   integrity sha512-GQDxZ5Jd+Aq/qUxbCm1UtzmL/s++V7zKgE8yMktJiCQXCCFZnMZh9ng+6/Ne6PjNSXH0L9CjeOEREfRnq6Duag==
@@ -4605,13 +4605,13 @@ react-feather@^2.0.10:
   dependencies:
     prop-types "^15.7.2"
 
-react-github-calendar@^4.4.2:
-  version "4.4.2"
-  resolved "https://registry.yarnpkg.com/react-github-calendar/-/react-github-calendar-4.4.2.tgz#794bdef1bf577d6081f1c1b1c525bcc0606f6e73"
-  integrity sha512-yZSMsrFrD1OO23w8sGaIBJGrpqVYOgRSmitudn3rVWxJVcx7++KjJGIoPwWBsT//4i0JRQqZ1wofuBw/x0QkzA==
+react-github-calendar@^4.5.1:
+  version "4.5.1"
+  resolved "https://registry.yarnpkg.com/react-github-calendar/-/react-github-calendar-4.5.1.tgz#2601251fe118bec4453342ec838ba6ba9a2e699b"
+  integrity sha512-upsftOWCzsxMFdr36JaPLaoHFhFtEcfExVdmHqfRwmRHwosaET4NxJito38ywkAXTwyLnf/KdxYYFpDaLaUBgg==
   dependencies:
-    react-activity-calendar "^2.6.3"
-    react-error-boundary "^4.1.1"
+    react-activity-calendar "^2.7.1"
+    react-error-boundary "^4.1.2"
 
 react-is@^16.12.0, react-is@^16.13.1:
   version "16.13.1"
