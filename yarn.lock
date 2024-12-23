@@ -4577,10 +4577,10 @@ randombytes@^2.1.0:
   dependencies:
     safe-buffer "^5.1.0"
 
-react-activity-calendar@^2.7.1:
-  version "2.7.1"
-  resolved "https://registry.yarnpkg.com/react-activity-calendar/-/react-activity-calendar-2.7.1.tgz#399555b95b5bced76a6f5f16c00698c98e0e17df"
-  integrity sha512-leYmZpQs73ajg1dXP1XE2hd4cCPhV/pjWsO08S20oI9jcgyTt/JKKLHjbt6pF8rdPnEU630nBwQF9Jqw981nnQ==
+react-activity-calendar@^2.7.5:
+  version "2.7.5"
+  resolved "https://registry.yarnpkg.com/react-activity-calendar/-/react-activity-calendar-2.7.5.tgz#c50a1d1111316f18b5222b54d1db15680cbb6ade"
+  integrity sha512-sVXqN4wDsjrwdjCJfgrOYP8Q6o8HfMV+lmxn4GQz4gacOwQNXIC9y0Obs5EqNifqZVJqnGSV1dLmPNWFKw4OLA==
   dependencies:
     date-fns "^4.1.0"
 
@@ -4606,12 +4606,12 @@ react-feather@^2.0.10:
   dependencies:
     prop-types "^15.7.2"
 
-react-github-calendar@^4.5.1:
-  version "4.5.1"
-  resolved "https://registry.yarnpkg.com/react-github-calendar/-/react-github-calendar-4.5.1.tgz#2601251fe118bec4453342ec838ba6ba9a2e699b"
-  integrity sha512-upsftOWCzsxMFdr36JaPLaoHFhFtEcfExVdmHqfRwmRHwosaET4NxJito38ywkAXTwyLnf/KdxYYFpDaLaUBgg==
+react-github-calendar@^4.5.2:
+  version "4.5.2"
+  resolved "https://registry.yarnpkg.com/react-github-calendar/-/react-github-calendar-4.5.2.tgz#ded1f425b4c31d1ba878ba2e11fadb91f54db813"
+  integrity sha512-QgX21sjB5+aLWMDQELtZZOQtcoBW9IuPZSf84PBuUwbByfcQLvzLttlQFemC/EmLJ3pRX0YxjYVoM01hxQ9isw==
   dependencies:
-    react-activity-calendar "^2.7.1"
+    react-activity-calendar "^2.7.5"
     react-error-boundary "^4.1.2"
 
 react-is@^16.12.0, react-is@^16.13.1:
