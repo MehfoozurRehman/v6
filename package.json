@@ -33,6 +33,6 @@
     "vite-plugin-compression": "^0.5.1",
     "vite-plugin-imagemin": "^0.6.1",
     "vite-plugin-pwa": "^0.21.1",
-    "vite-plugin-webfont-dl": "^3.10.3"
+    "vite-plugin-webfont-dl": "^3.10.4"
   }
 }
