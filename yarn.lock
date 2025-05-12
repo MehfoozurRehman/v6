@@ -4617,10 +4617,10 @@ randombytes@^2.1.0:
   dependencies:
     safe-buffer "^5.1.0"
 
-react-activity-calendar@^2.7.8:
-  version "2.7.8"
-  resolved "https://registry.yarnpkg.com/react-activity-calendar/-/react-activity-calendar-2.7.8.tgz#077367bbf3504349ba72d236ca1cc78e8a475fad"
-  integrity sha512-lj9IIMrRAoMsXSf6wWo7AcMNXie61Y5EuNApm6rVdJswngyw8LS2Ja50yHrGBFu9GaL1HMutGIoSbr5ifEi9xw==
+react-activity-calendar@^2.7.11:
+  version "2.7.11"
+  resolved "https://registry.yarnpkg.com/react-activity-calendar/-/react-activity-calendar-2.7.11.tgz#07340f5dc3fc0193eaf90a402942162d790382ca"
+  integrity sha512-JHJyvdYciBVPt1ZkE2pqnmg0ZMsmer09CXD1qWe2hpl3PyMosVqFOMZmDqjLxRWI6VD2ILH4RFk5dZCuWwnaPg==
   dependencies:
     date-fns "^4.1.0"
 
@@ -4631,10 +4631,10 @@ react-dom@^19.1.0:
   dependencies:
     scheduler "^0.26.0"
 
-react-error-boundary@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/react-error-boundary/-/react-error-boundary-5.0.0.tgz#6b6c7e075c922afb0283147e5b084efa44e68570"
-  integrity sha512-tnjAxG+IkpLephNcePNA7v6F/QpWLH8He65+DmedchDwg162JZqx4NmbXj0mlAYVVEd81OW7aFhmbsScYfiAFQ==
+react-error-boundary@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/react-error-boundary/-/react-error-boundary-6.0.0.tgz#a9e552146958fa77d873b587aa6a5e97544ee954"
+  integrity sha512-gdlJjD7NWr0IfkPlaREN2d9uUZUlksrfOx7SX62VRerwXbMY6ftGCIZua1VG1aXFNOimhISsTq+Owp725b9SiA==
   dependencies:
     "@babel/runtime" "^7.12.5"
 
@@ -4645,13 +4645,13 @@ react-feather@^2.0.10:
   dependencies:
     prop-types "^15.7.2"
 
-react-github-calendar@^4.5.6:
-  version "4.5.6"
-  resolved "https://registry.yarnpkg.com/react-github-calendar/-/react-github-calendar-4.5.6.tgz#8bae9ab5c6758c716e4fdd53efde64a70cb94356"
-  integrity sha512-wuLJ+4MDBnli+YWUCprmK+e4ltRaMaB1P4VnYCrbATzFUq46ZDvrXbjQ8uf5aXPbWW8X+ZzSBgGOXGDWgkl0Sw==
+react-github-calendar@^4.5.7:
+  version "4.5.7"
+  resolved "https://registry.yarnpkg.com/react-github-calendar/-/react-github-calendar-4.5.7.tgz#5d80ba2e793e56b6c5f81cd278f0ec47c6e7baf3"
+  integrity sha512-R1VBhSMM6NTeKkpvlHaAnIue1XPHhGHx6RpnyIfT7p1lq9PpNsIgwYGZ5I8FhX+J/F4ps+DAPMr+qdYj7lzQWQ==
   dependencies:
-    react-activity-calendar "^2.7.8"
-    react-error-boundary "^5.0.0"
+    react-activity-calendar "^2.7.11"
+    react-error-boundary "^6.0.0"
 
 react-is@^16.12.0, react-is@^16.13.1:
   version "16.13.1"
