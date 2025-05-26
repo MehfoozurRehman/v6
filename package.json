@@ -23,7 +23,7 @@
     "format": "npx prettier --write ."
   },
   "devDependencies": {
-    "@types/react": "^19.1.4",
+    "@types/react": "^19.1.5",
     "@types/react-dom": "^19.1.5",
     "@vitejs/plugin-react": "^4.5.0",
     "sass": "^1.89.0",
