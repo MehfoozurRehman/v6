@@ -21,9 +21,9 @@ export default function TestimonialsCard({
         src={
           imageSrc
             ? imageSrc
-            : "https://ui-avatars.com/api/?name=" +
-              title +
-              "&background=0a192f&color=64ffda&size=65"
+            : `https://ui-avatars.com/api/?name=${encodeURIComponent(
+                title,
+              )}&background=0a192f&color=64ffda&size=65`
         }
         alt={title}
         className="card__image__reverse"
@@ -44,15 +44,17 @@ export default function TestimonialsCard({
       </div>
       <div className="card__info" style={{ textAlign: "center" }}>
         <span style={{ fontSize: 20, fontWeight: "bold", marginRight: 10 }}>
-          "
+          {" "}
+          "{" "}
         </span>
         {info
           .split(" ")
           .slice(0, 30)
           .join(" ")
-          .concat(info.length > 30 ? "..." : "")}
+          .concat(info.split(" ").length > 30 ? "..." : "")}
         <span style={{ fontSize: 20, fontWeight: "bold", marginLeft: 10 }}>
-          "
+          {" "}
+          "{" "}
         </span>
       </div>
     </div>

@@ -34,6 +34,9 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: var(--secondary);
+  background-image: radial-gradient(#ffffff27 1px, transparent 0);
+  background-size: 1.875rem 1.875rem;
+  background-position: center -0.9375rem;
 }
 @keyframes fadeInAnimation {
   0% {
@@ -109,6 +112,9 @@ body {
   top: 0;
   background-color: var(--secondary);
   z-index: 999;
+  background-image: radial-gradient(#ffffff27 1px, transparent 0);
+  background-size: 1.875rem 1.875rem;
+  background-position: center -0.9375rem;
 }
 .header__content {
   width: 100%;

@@ -1,0 +1,11 @@
+[
+  {
+    "right": true,
+    "company": "DSME Global",
+    "name": "DSMEGlobals.com",
+    "tech": ["ReactJS", "Sass", "Firebase", "Adobe Xd", "Rest"],
+    "banner": "/dsmeglobal.png",
+    "info": "A website for a startup empowering and helping non technical personal to build creative and intuitive digital identity",
+    "siteLink": "http://www.dsmeglobal.co/"
+  }
+]

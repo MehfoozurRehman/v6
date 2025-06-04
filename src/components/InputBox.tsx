@@ -22,8 +22,8 @@ export default function InputBox({
           value !== ""
             ? { top: -10, zIndex: 1 }
             : onFucus
-            ? { top: -10, zIndex: 1 }
-            : null
+              ? { top: -10, zIndex: 1 }
+              : null
         }
         htmlFor={placeholder}
       >

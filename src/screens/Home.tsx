@@ -14,10 +14,10 @@ import emailjs from "@emailjs/browser";
 import fetcher from "../utils/fetcher";
 import getExperience from "../utils/getExperience";
 import { pic } from "../assets";
-import { services } from "../data/services";
-import { testimonials } from "../data/testimonials";
-import { useLocation } from "wouter";
-import { works } from "../data/works";
+import services from "../data/services.json";
+import testimonials from "../data/testimonials.json";
+import { useNavigate } from "react-router";
+import works from "../data/works.json";
 
 // import ClientCard from "../components/ClientCard";
 
@@ -28,7 +28,7 @@ preload(
 );
 
 export default function Home() {
-  const [, navigate] = useLocation();
+  const navigate = useNavigate();
   const { data: projects } = useSWR(
     "https://api.github.com/users/MehfoozurRehman/repos?sort=updated",
     fetcher
@@ -86,12 +86,12 @@ export default function Home() {
   }, []);
 
   const [submitted, setSubmitted] = useState(false);
-  const form = useRef();
+  const form = useRef<HTMLFormElement>(null);
 
   useEffect(() => {
     if (submitted) {
       setTimeout(() => {
-        form.current.reset();
+        form.current?.reset();
         setSubmitted(false);
       }, 3000);
     }
@@ -119,7 +119,7 @@ export default function Home() {
         <div className="home__section__sub__heading">Hi, i am</div>
         <div className="home__section__heading">Mefooz-ur-Rehman</div>
         <div className="home__section__slogan">
-          Let's Build You A <span>Digital Identity</span>
+          Let's Build Your <span>Digital Identity</span>
         </div>
         <div className="home__section__info">
           I'm a Web Developer based in Pakistan. Proficient in web and mobile
@@ -134,7 +134,8 @@ export default function Home() {
           title="Check out my work!"
           onClick={() => {
             document.getElementById("work__section").scrollIntoView();
-            document.getElementById("work").checked = true;
+            (document.getElementById("work") as HTMLInputElement).checked =
+              true;
           }}
         >
           Check out my work!
@@ -163,7 +164,7 @@ export default function Home() {
                 ></path>
               </svg>
               <div className="about__section__left__content__blob__content">
-                {data?.public_repos + data?.total_private_repos} +
+                {(data?.public_repos || 0) + (data?.total_private_repos || 0)} +
                 <span>Projects Completed</span>
               </div>
             </div>
@@ -365,7 +366,6 @@ export default function Home() {
             {testimonials?.map((item, index) => (
               <SwiperSlide key={index}>
                 <TestimonialsCard
-                  imageSrc={item.avatar}
                   title={item.name}
                   info={item.message}
                   designation={item.designation}

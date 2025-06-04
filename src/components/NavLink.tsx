@@ -1,4 +1,4 @@
-import { useLocation } from "wouter";
+import { useNavigate } from "react-router";
 
 interface NavLinkProps {
   scrollTo: string;
@@ -11,7 +11,8 @@ export default function NavLink({
   label,
   defaultChecked,
 }: NavLinkProps) {
-  const [, navigate] = useLocation();
+  const navigate = useNavigate();
+
   return (
     <div className="header__content__nav__links__entry">
       <input
