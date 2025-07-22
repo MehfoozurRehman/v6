@@ -43,8 +43,8 @@ importers:
         version: 2.3.4(react@19.1.0)
     devDependencies:
       '@types/node':
-        specifier: ^24.0.13
-        version: 24.0.13
+        specifier: ^24.0.15
+        version: 24.0.15
       '@types/react':
         specifier: ^19.1.8
         version: 19.1.8
@@ -52,8 +52,8 @@ importers:
         specifier: ^19.1.6
         version: 19.1.6(@types/react@19.1.8)
       '@vitejs/plugin-react':
-        specifier: ^4.7.0
-        version: 4.7.0(vite@6.3.5(@types/node@24.0.13)(sass@1.89.2)(terser@5.43.1))
+        specifier: ^4.6.0
+        version: 4.6.0(vite@6.3.5(@types/node@24.0.15)(sass@1.89.2)(terser@5.43.1))
       sass:
         specifier: ^1.89.2
         version: 1.89.2
@@ -61,23 +61,23 @@ importers:
         specifier: ^5.8.3
         version: 5.8.3
       vite:
-        specifier: ^7.0.5
-        version: 7.0.5(@types/node@24.0.13)(sass@1.89.2)(terser@5.43.1)
+        specifier: ^6.3.5
+        version: 6.3.5(@types/node@24.0.15)(sass@1.89.2)(terser@5.43.1)
       vite-plugin-chunk-split:
         specifier: ^0.5.0
-        version: 0.5.0(vite@7.0.5(@types/node@24.0.13)(sass@1.89.2)(terser@5.43.1))
+        version: 0.5.0(vite@6.3.5(@types/node@24.0.15)(sass@1.89.2)(terser@5.43.1))
       vite-plugin-compression:
         specifier: ^0.5.1
-        version: 0.5.1(vite@7.0.5(@types/node@24.0.13)(sass@1.89.2)(terser@5.43.1))
+        version: 0.5.1(vite@6.3.5(@types/node@24.0.15)(sass@1.89.2)(terser@5.43.1))
       vite-plugin-imagemin:
         specifier: ^0.6.1
-        version: 0.6.1(vite@7.0.5(@types/node@24.0.13)(sass@1.89.2)(terser@5.43.1))
+        version: 0.6.1(vite@6.3.5(@types/node@24.0.15)(sass@1.89.2)(terser@5.43.1))
       vite-plugin-pwa:
         specifier: ^1.0.1
-        version: 1.0.1(vite@7.0.5(@types/node@24.0.13)(sass@1.89.2)(terser@5.43.1))(workbox-build@7.3.0(@types/babel__core@7.20.5))(workbox-window@7.3.0)
+        version: 1.0.1(vite@6.3.5(@types/node@24.0.15)(sass@1.89.2)(terser@5.43.1))(workbox-build@7.3.0(@types/babel__core@7.20.5))(workbox-window@7.3.0)
       vite-plugin-webfont-dl:
         specifier: ^3.11.0
-        version: 3.11.0(vite@7.0.5(@types/node@24.0.13)(sass@1.89.2)(terser@5.43.1))
+        version: 3.11.0(vite@6.3.5(@types/node@24.0.15)(sass@1.89.2)(terser@5.43.1))
 
 packages:
 
@@ -1094,8 +1094,8 @@ packages:
   '@types/minimatch@5.1.2':
     resolution: {integrity: sha512-K0VQKziLUWkVKiRVrx4a40iPaxTUefQmjtkQofBkYRcoaaL/8rhwDWww9qWbrgicNOgnpIsMxyNIUM4+n6dUIA==}
 
-  '@types/node@24.0.13':
-    resolution: {integrity: sha512-Qm9OYVOFHFYg3wJoTSrz80hoec5Lia/dPp84do3X7dZvLikQvM1YpmvTBEdIr/e+U8HTkFjLHLnl78K/qjf+jQ==}
+  '@types/node@24.0.15':
+    resolution: {integrity: sha512-oaeTSbCef7U/z7rDeJA138xpG3NuKc64/rZ2qmUFkFJmnMsAPaluIifqyWd8hSSMxyP9oie3dLAqYPblag9KgA==}
 
   '@types/react-dom@19.1.6':
     resolution: {integrity: sha512-4hOiT/dwO8Ko0gV1m/TJZYk3y0KBnY9vzDh7W+DH17b2HFSOGgdj33dhihPeuy3l0q23+4e+hoXHV6hCC4dCXw==}
@@ -2932,6 +2932,10 @@ packages:
   picomatch@2.3.1:
     resolution: {integrity: sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==}
     engines: {node: '>=8.6'}
+
+  picomatch@4.0.3:
+    resolution: {integrity: sha512-5gTmgEY/sqK6gFXLIsQNH19lWb4ebPDLA4SdLP7dsWkIXHWlG66oPuVvXSGFPppYZz8ZDZq0dYYrbHfBCVUb1Q==}
+    engines: {node: '>=12'}
 
   picomatch@4.0.3:
     resolution: {integrity: sha512-5gTmgEY/sqK6gFXLIsQNH19lWb4ebPDLA4SdLP7dsWkIXHWlG66oPuVvXSGFPppYZz8ZDZq0dYYrbHfBCVUb1Q==}
@@ -4842,7 +4846,7 @@ snapshots:
 
   '@types/cheerio@0.22.35':
     dependencies:
-      '@types/node': 24.0.13
+      '@types/node': 24.0.15
 
   '@types/estree@0.0.39': {}
 
@@ -4851,7 +4855,7 @@ snapshots:
   '@types/glob@7.2.0':
     dependencies:
       '@types/minimatch': 5.1.2
-      '@types/node': 24.0.13
+      '@types/node': 24.0.15
 
   '@types/imagemin-gifsicle@7.0.4':
     dependencies:
@@ -4880,15 +4884,15 @@ snapshots:
 
   '@types/imagemin@7.0.1':
     dependencies:
-      '@types/node': 24.0.13
+      '@types/node': 24.0.15
 
   '@types/keyv@3.1.4':
     dependencies:
-      '@types/node': 24.0.13
+      '@types/node': 24.0.15
 
   '@types/minimatch@5.1.2': {}
 
-  '@types/node@24.0.13':
+  '@types/node@24.0.15':
     dependencies:
       undici-types: 7.8.0
 
@@ -4904,15 +4908,15 @@ snapshots:
 
   '@types/responselike@1.0.3':
     dependencies:
-      '@types/node': 24.0.13
+      '@types/node': 24.0.15
 
   '@types/svgo@2.6.4':
     dependencies:
-      '@types/node': 24.0.13
+      '@types/node': 24.0.15
 
   '@types/trusted-types@2.0.7': {}
 
-  '@vitejs/plugin-react@4.7.0(vite@6.3.5(@types/node@24.0.13)(sass@1.89.2)(terser@5.43.1))':
+  '@vitejs/plugin-react@4.6.0(vite@6.3.5(@types/node@24.0.15)(sass@1.89.2)(terser@5.43.1))':
     dependencies:
       '@babel/core': 7.28.0
       '@babel/plugin-transform-react-jsx-self': 7.27.1(@babel/core@7.28.0)
@@ -4920,7 +4924,7 @@ snapshots:
       '@rolldown/pluginutils': 1.0.0-beta.27
       '@types/babel__core': 7.20.5
       react-refresh: 0.17.0
-      vite: 7.0.5(@types/node@24.0.13)(sass@1.89.2)(terser@5.43.1)
+      vite: 6.3.5(@types/node@24.0.15)(sass@1.89.2)(terser@5.43.1)
     transitivePeerDependencies:
       - supports-color
 
@@ -7035,6 +7039,8 @@ snapshots:
 
   picomatch@4.0.3: {}
 
+  picomatch@4.0.3: {}
+
   pify@2.3.0: {}
 
   pify@3.0.0: {}
@@ -7850,23 +7856,23 @@ snapshots:
       spdx-correct: 3.2.0
       spdx-expression-parse: 3.0.1
 
-  vite-plugin-chunk-split@0.5.0(vite@7.0.5(@types/node@24.0.13)(sass@1.89.2)(terser@5.43.1)):
+  vite-plugin-chunk-split@0.5.0(vite@6.3.5(@types/node@24.0.15)(sass@1.89.2)(terser@5.43.1)):
     dependencies:
       es-module-lexer: 1.5.4
       import-meta-resolve: 4.1.0
       magic-string: 0.30.13
-      vite: 7.0.5(@types/node@24.0.13)(sass@1.89.2)(terser@5.43.1)
+      vite: 6.3.5(@types/node@24.0.15)(sass@1.89.2)(terser@5.43.1)
 
-  vite-plugin-compression@0.5.1(vite@7.0.5(@types/node@24.0.13)(sass@1.89.2)(terser@5.43.1)):
+  vite-plugin-compression@0.5.1(vite@6.3.5(@types/node@24.0.15)(sass@1.89.2)(terser@5.43.1)):
     dependencies:
       chalk: 4.1.2
       debug: 4.3.7
       fs-extra: 10.1.0
-      vite: 7.0.5(@types/node@24.0.13)(sass@1.89.2)(terser@5.43.1)
+      vite: 6.3.5(@types/node@24.0.15)(sass@1.89.2)(terser@5.43.1)
     transitivePeerDependencies:
       - supports-color
 
-  vite-plugin-imagemin@0.6.1(vite@7.0.5(@types/node@24.0.13)(sass@1.89.2)(terser@5.43.1)):
+  vite-plugin-imagemin@0.6.1(vite@6.3.5(@types/node@24.0.15)(sass@1.89.2)(terser@5.43.1)):
     dependencies:
       '@types/imagemin': 7.0.1
       '@types/imagemin-gifsicle': 7.0.4
@@ -7891,32 +7897,32 @@ snapshots:
       imagemin-webp: 6.1.0
       jpegtran-bin: 6.0.1
       pathe: 0.2.0
-      vite: 7.0.5(@types/node@24.0.13)(sass@1.89.2)(terser@5.43.1)
+      vite: 6.3.5(@types/node@24.0.15)(sass@1.89.2)(terser@5.43.1)
     transitivePeerDependencies:
       - supports-color
 
-  vite-plugin-pwa@1.0.1(vite@7.0.5(@types/node@24.0.13)(sass@1.89.2)(terser@5.43.1))(workbox-build@7.3.0(@types/babel__core@7.20.5))(workbox-window@7.3.0):
+  vite-plugin-pwa@1.0.1(vite@6.3.5(@types/node@24.0.15)(sass@1.89.2)(terser@5.43.1))(workbox-build@7.3.0(@types/babel__core@7.20.5))(workbox-window@7.3.0):
     dependencies:
       debug: 4.4.1
       pretty-bytes: 6.1.1
       tinyglobby: 0.2.14
-      vite: 7.0.5(@types/node@24.0.13)(sass@1.89.2)(terser@5.43.1)
+      vite: 6.3.5(@types/node@24.0.15)(sass@1.89.2)(terser@5.43.1)
       workbox-build: 7.3.0(@types/babel__core@7.20.5)
       workbox-window: 7.3.0
     transitivePeerDependencies:
       - supports-color
 
-  vite-plugin-webfont-dl@3.11.0(vite@7.0.5(@types/node@24.0.13)(sass@1.89.2)(terser@5.43.1)):
+  vite-plugin-webfont-dl@3.11.0(vite@6.3.5(@types/node@24.0.15)(sass@1.89.2)(terser@5.43.1)):
     dependencies:
       axios: 1.10.0
       clean-css: 5.3.3
       flat-cache: 6.1.11
       picocolors: 1.1.1
-      vite: 7.0.5(@types/node@24.0.13)(sass@1.89.2)(terser@5.43.1)
+      vite: 6.3.5(@types/node@24.0.15)(sass@1.89.2)(terser@5.43.1)
     transitivePeerDependencies:
       - debug
 
-  vite@7.0.5(@types/node@24.0.13)(sass@1.89.2)(terser@5.43.1):
+  vite@6.3.5(@types/node@24.0.15)(sass@1.89.2)(terser@5.43.1):
     dependencies:
       esbuild: 0.25.8
       fdir: 6.4.6(picomatch@4.0.3)
@@ -7925,7 +7931,7 @@ snapshots:
       rollup: 4.45.1
       tinyglobby: 0.2.14
     optionalDependencies:
-      '@types/node': 24.0.13
+      '@types/node': 24.0.15
       fsevents: 2.3.3
       sass: 1.89.2
       terser: 5.43.1
