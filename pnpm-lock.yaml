@@ -15,69 +15,69 @@ importers:
         specifier: ^1.11.19
         version: 1.11.19
       react:
-        specifier: ^19.2.0
-        version: 19.2.0
+        specifier: ^19.2.1
+        version: 19.2.1
       react-dom:
-        specifier: ^19.2.0
-        version: 19.2.0(react@19.2.0)
+        specifier: ^19.2.1
+        version: 19.2.1(react@19.2.1)
       react-feather:
         specifier: ^2.0.10
-        version: 2.0.10(react@19.2.0)
+        version: 2.0.10(react@19.2.1)
       react-github-calendar:
         specifier: ^4.5.11
-        version: 4.5.11(react@19.2.0)
+        version: 4.5.11(react@19.2.1)
       react-outside-click-handler:
         specifier: ^1.3.0
-        version: 1.3.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+        version: 1.3.0(react-dom@19.2.1(react@19.2.1))(react@19.2.1)
       react-router:
-        specifier: ^7.9.6
-        version: 7.9.6(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+        specifier: ^7.10.1
+        version: 7.10.1(react-dom@19.2.1(react@19.2.1))(react@19.2.1)
       react-use-is-online:
         specifier: ^1.3.0
-        version: 1.3.0(enzyme@3.11.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+        version: 1.3.0(enzyme@3.11.0)(react-dom@19.2.1(react@19.2.1))(react@19.2.1)
       swiper:
         specifier: ^11.2.10
         version: 11.2.10
       swr:
-        specifier: ^2.3.6
-        version: 2.3.6(react@19.2.0)
+        specifier: ^2.3.7
+        version: 2.3.7(react@19.2.1)
     devDependencies:
       '@types/node':
         specifier: ^24.10.1
         version: 24.10.1
       '@types/react':
-        specifier: ^19.2.6
-        version: 19.2.6
+        specifier: ^19.2.7
+        version: 19.2.7
       '@types/react-dom':
         specifier: ^19.2.3
-        version: 19.2.3(@types/react@19.2.6)
+        version: 19.2.3(@types/react@19.2.7)
       '@vitejs/plugin-react':
         specifier: ^4.7.0
-        version: 4.7.0(vite@7.2.2(@types/node@24.10.1)(sass@1.94.1)(terser@5.44.1))
+        version: 4.7.0(vite@7.2.6(@types/node@24.10.1)(sass@1.94.2)(terser@5.44.1))
       sass:
-        specifier: ^1.94.1
-        version: 1.94.1
+        specifier: ^1.94.2
+        version: 1.94.2
       typescript:
         specifier: ^5.9.3
         version: 5.9.3
       vite:
-        specifier: ^7.2.2
-        version: 7.2.2(@types/node@24.10.1)(sass@1.94.1)(terser@5.44.1)
+        specifier: ^7.2.6
+        version: 7.2.6(@types/node@24.10.1)(sass@1.94.2)(terser@5.44.1)
       vite-plugin-chunk-split:
         specifier: ^0.5.0
-        version: 0.5.0(vite@7.2.2(@types/node@24.10.1)(sass@1.94.1)(terser@5.44.1))
+        version: 0.5.0(vite@7.2.6(@types/node@24.10.1)(sass@1.94.2)(terser@5.44.1))
       vite-plugin-compression:
         specifier: ^0.5.1
-        version: 0.5.1(vite@7.2.2(@types/node@24.10.1)(sass@1.94.1)(terser@5.44.1))
+        version: 0.5.1(vite@7.2.6(@types/node@24.10.1)(sass@1.94.2)(terser@5.44.1))
       vite-plugin-imagemin:
         specifier: ^0.6.1
-        version: 0.6.1(vite@7.2.2(@types/node@24.10.1)(sass@1.94.1)(terser@5.44.1))
+        version: 0.6.1(vite@7.2.6(@types/node@24.10.1)(sass@1.94.2)(terser@5.44.1))
       vite-plugin-pwa:
-        specifier: ^1.1.0
-        version: 1.1.0(vite@7.2.2(@types/node@24.10.1)(sass@1.94.1)(terser@5.44.1))(workbox-build@7.3.0(@types/babel__core@7.20.5))(workbox-window@7.3.0)
+        specifier: ^1.2.0
+        version: 1.2.0(vite@7.2.6(@types/node@24.10.1)(sass@1.94.2)(terser@5.44.1))(workbox-build@7.3.0(@types/babel__core@7.20.5))(workbox-window@7.3.0)
       vite-plugin-webfont-dl:
         specifier: ^3.11.1
-        version: 3.11.1(vite@7.2.2(@types/node@24.10.1)(sass@1.94.1)(terser@5.44.1))
+        version: 3.11.1(vite@7.2.6(@types/node@24.10.1)(sass@1.94.2)(terser@5.44.1))
 
 packages:
 
@@ -1129,8 +1129,8 @@ packages:
     peerDependencies:
       '@types/react': ^19.2.0
 
-  '@types/react@19.2.6':
-    resolution: {integrity: sha512-p/jUvulfgU7oKtj6Xpk8cA2Y1xKTtICGpJYeJXz2YVO2UcvjQgeRMLDGfDeqeRW2Ta+0QNFwcc8X3GH8SxZz6w==}
+  '@types/react@19.2.7':
+    resolution: {integrity: sha512-MWtvHrGZLFttgeEj28VXHxpmwYbor/ATPYbBfSFZEIRK0ecCFLl2Qo55z52Hss+UV9CRN7trSeq1zbgx7YDWWg==}
 
   '@types/resolve@1.20.2':
     resolution: {integrity: sha512-60BCwRFOZCQhDncwQdxxeOEEkbc5dIMccYLwbxsS4TUNeVECQ/pBJ0j09mrHOl/JJvpRPGwO9SvE4nR2Nb/a4Q==}
@@ -2911,10 +2911,10 @@ packages:
     peerDependencies:
       react: ^18.0.0 || ^19.0.0
 
-  react-dom@19.2.0:
-    resolution: {integrity: sha512-UlbRu4cAiGaIewkPyiRGJk0imDN2T3JjieT6spoL2UeSf5od4n5LB/mQ4ejmxhCFT1tYe8IvaFulzynWovsEFQ==}
+  react-dom@19.2.1:
+    resolution: {integrity: sha512-ibrK8llX2a4eOskq1mXKu/TGZj9qzomO+sNfO98M6d9zIPOEhlBkMkBUBLd1vgS0gQsLDBzA+8jJBVXDnfHmJg==}
     peerDependencies:
-      react: ^19.2.0
+      react: ^19.2.1
 
   react-feather@2.0.10:
     resolution: {integrity: sha512-BLhukwJ+Z92Nmdcs+EMw6dy1Z/VLiJTzEQACDUEnWMClhYnFykJCGWQx+NmwP/qQHGX/5CzQ+TGi8ofg2+HzVQ==}
@@ -2939,8 +2939,8 @@ packages:
     resolution: {integrity: sha512-z6F7K9bV85EfseRCp2bzrpyQ0Gkw1uLoCel9XBVWPg/TjRj94SkJzUTGfOa4bs7iJvBWtQG0Wq7wnI0syw3EBQ==}
     engines: {node: '>=0.10.0'}
 
-  react-router@7.9.6:
-    resolution: {integrity: sha512-Y1tUp8clYRXpfPITyuifmSoE2vncSME18uVLgaqyxh9H35JWpIfzHo+9y3Fzh5odk/jxPW29IgLgzcdwxGqyNA==}
+  react-router@7.10.1:
+    resolution: {integrity: sha512-gHL89dRa3kwlUYtRQ+m8NmxGI6CgqN+k4XyGjwcFoQwwCWF6xXpOCUlDovkXClS0d0XJN/5q7kc5W3kiFEd0Yw==}
     engines: {node: '>=20.0.0'}
     peerDependencies:
       react: '>=18'
@@ -2955,8 +2955,8 @@ packages:
       react: '>=16.8.0'
       react-dom: '>=16.8.0'
 
-  react@19.2.0:
-    resolution: {integrity: sha512-tmbWg6W31tQLeB5cdIBOicJDJRR2KzXsV7uSK9iNfLWQ5bIZfxuPEHp7M8wiHyHnn0DD1i7w3Zmin0FtkrwoCQ==}
+  react@19.2.1:
+    resolution: {integrity: sha512-DGrYcCWK7tvYMnWh79yrPHt+vdx9tY+1gPZa7nJQtO/p8bLTDaHp4dzwEhQB7pZ4Xe3ok4XKuEPrVuc+wlpkmw==}
     engines: {node: '>=0.10.0'}
 
   read-pkg-up@1.0.1:
@@ -3074,8 +3074,8 @@ packages:
   safer-buffer@2.1.2:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
 
-  sass@1.94.1:
-    resolution: {integrity: sha512-/YVm5FRQaRlr3oNh2LLFYne1PdPlRZGyKnHh1sLleOqLcohTR4eUUvBjBIqkl1fEXd1MGOHgzJGJh+LgTtV4KQ==}
+  sass@1.94.2:
+    resolution: {integrity: sha512-N+7WK20/wOr7CzA2snJcUSSNTCzeCGUTFY3OgeQP3mZ1aj9NMQ0mSTXwlrnd89j33zzQJGqIN52GIOmYrfq46A==}
     engines: {node: '>=14.0.0'}
     hasBin: true
 
@@ -3301,8 +3301,8 @@ packages:
     resolution: {integrity: sha512-RMeVUUjTQH+6N3ckimK93oxz6Sn5la4aDlgPzB+rBrG/smPdCTicXyhxa+woIpopz+jewEloiEE3lKo1h9w2YQ==}
     engines: {node: '>= 4.7.0'}
 
-  swr@2.3.6:
-    resolution: {integrity: sha512-wfHRmHWk/isGNMwlLGlZX5Gzz/uTgo0o2IRuTMcf4CPuPFJZlq0rDaKUx+ozB5nBOReNV1kiOyzMfj+MBMikLw==}
+  swr@2.3.7:
+    resolution: {integrity: sha512-ZEquQ82QvalqTxhBVv/DlAg2mbmUjF4UgpPg9wwk4ufb9rQnZXh1iKyyKBqV6bQGu1Ie7L1QwSYO07qFIa1p+g==}
     peerDependencies:
       react: ^16.11.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
 
@@ -3484,14 +3484,14 @@ packages:
     peerDependencies:
       vite: '>=2.0.0'
 
-  vite-plugin-pwa@1.1.0:
-    resolution: {integrity: sha512-VsSpdubPzXhHWVINcSx6uHRMpOHVHQcHsef1QgkOlEoaIDAlssFEW88LBq1a59BuokAhsh2kUDJbaX1bZv4Bjw==}
+  vite-plugin-pwa@1.2.0:
+    resolution: {integrity: sha512-a2xld+SJshT9Lgcv8Ji4+srFJL4k/1bVbd1x06JIkvecpQkwkvCncD1+gSzcdm3s+owWLpMJerG3aN5jupJEVw==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       '@vite-pwa/assets-generator': ^1.0.0
       vite: ^3.1.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0
-      workbox-build: ^7.3.0
-      workbox-window: ^7.3.0
+      workbox-build: ^7.4.0
+      workbox-window: ^7.4.0
     peerDependenciesMeta:
       '@vite-pwa/assets-generator':
         optional: true
@@ -3501,8 +3501,8 @@ packages:
     peerDependencies:
       vite: ^2 || ^3 || ^4 || ^5 || ^6 || ^7
 
-  vite@7.2.2:
-    resolution: {integrity: sha512-BxAKBWmIbrDgrokdGZH1IgkIk/5mMHDreLDmCJ0qpyJaAteP8NvMhkwr/ZCQNqNH97bw/dANTE9PDzqwJghfMQ==}
+  vite@7.2.6:
+    resolution: {integrity: sha512-tI2l/nFHC5rLh7+5+o7QjKjSR04ivXDF4jcgV0f/bTQ+OJiITy5S6gaynVsEM+7RqzufMnVbIon6Sr5x1SDYaQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
     peerDependencies:
@@ -4728,11 +4728,11 @@ snapshots:
     dependencies:
       undici-types: 7.16.0
 
-  '@types/react-dom@19.2.3(@types/react@19.2.6)':
+  '@types/react-dom@19.2.3(@types/react@19.2.7)':
     dependencies:
-      '@types/react': 19.2.6
+      '@types/react': 19.2.7
 
-  '@types/react@19.2.6':
+  '@types/react@19.2.7':
     dependencies:
       csstype: 3.2.3
 
@@ -4748,7 +4748,7 @@ snapshots:
 
   '@types/trusted-types@2.0.7': {}
 
-  '@vitejs/plugin-react@4.7.0(vite@7.2.2(@types/node@24.10.1)(sass@1.94.1)(terser@5.44.1))':
+  '@vitejs/plugin-react@4.7.0(vite@7.2.6(@types/node@24.10.1)(sass@1.94.2)(terser@5.44.1))':
     dependencies:
       '@babel/core': 7.28.5
       '@babel/plugin-transform-react-jsx-self': 7.27.1(@babel/core@7.28.5)
@@ -4756,13 +4756,13 @@ snapshots:
       '@rolldown/pluginutils': 1.0.0-beta.27
       '@types/babel__core': 7.20.5
       react-refresh: 0.17.0
-      vite: 7.2.2(@types/node@24.10.1)(sass@1.94.1)(terser@5.44.1)
+      vite: 7.2.6(@types/node@24.10.1)(sass@1.94.2)(terser@5.44.1)
     transitivePeerDependencies:
       - supports-color
 
   acorn@8.15.0: {}
 
-  airbnb-prop-types@2.16.0(react@19.2.0):
+  airbnb-prop-types@2.16.0(react@19.2.1):
     dependencies:
       array.prototype.find: 2.2.3
       function.prototype.name: 1.1.8
@@ -4772,7 +4772,7 @@ snapshots:
       object.entries: 1.1.9
       prop-types: 15.8.1
       prop-types-exact: 1.2.7
-      react: 19.2.0
+      react: 19.2.1
       react-is: 16.13.1
 
   ajv@8.17.1:
@@ -6723,57 +6723,57 @@ snapshots:
     dependencies:
       safe-buffer: 5.2.1
 
-  react-activity-calendar@2.7.15(react@19.2.0):
+  react-activity-calendar@2.7.15(react@19.2.1):
     dependencies:
       date-fns: 4.1.0
-      react: 19.2.0
+      react: 19.2.1
 
-  react-dom@19.2.0(react@19.2.0):
+  react-dom@19.2.1(react@19.2.1):
     dependencies:
-      react: 19.2.0
+      react: 19.2.1
       scheduler: 0.27.0
 
-  react-feather@2.0.10(react@19.2.0):
+  react-feather@2.0.10(react@19.2.1):
     dependencies:
       prop-types: 15.8.1
-      react: 19.2.0
+      react: 19.2.1
 
-  react-github-calendar@4.5.11(react@19.2.0):
+  react-github-calendar@4.5.11(react@19.2.1):
     dependencies:
-      react: 19.2.0
-      react-activity-calendar: 2.7.15(react@19.2.0)
+      react: 19.2.1
+      react-activity-calendar: 2.7.15(react@19.2.1)
 
   react-is@16.13.1: {}
 
-  react-outside-click-handler@1.3.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0):
+  react-outside-click-handler@1.3.0(react-dom@19.2.1(react@19.2.1))(react@19.2.1):
     dependencies:
-      airbnb-prop-types: 2.16.0(react@19.2.0)
+      airbnb-prop-types: 2.16.0(react@19.2.1)
       consolidated-events: 2.0.2
       document.contains: 1.0.2
       object.values: 1.2.1
       prop-types: 15.8.1
-      react: 19.2.0
-      react-dom: 19.2.0(react@19.2.0)
+      react: 19.2.1
+      react-dom: 19.2.1(react@19.2.1)
 
   react-refresh@0.17.0: {}
 
-  react-router@7.9.6(react-dom@19.2.0(react@19.2.0))(react@19.2.0):
+  react-router@7.10.1(react-dom@19.2.1(react@19.2.1))(react@19.2.1):
     dependencies:
       cookie: 1.0.2
-      react: 19.2.0
+      react: 19.2.1
       set-cookie-parser: 2.7.2
     optionalDependencies:
-      react-dom: 19.2.0(react@19.2.0)
+      react-dom: 19.2.1(react@19.2.1)
 
-  react-use-is-online@1.3.0(enzyme@3.11.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0):
+  react-use-is-online@1.3.0(enzyme@3.11.0)(react-dom@19.2.1(react@19.2.1))(react@19.2.1):
     dependencies:
       enzyme-to-json: 3.6.2(enzyme@3.11.0)
-      react: 19.2.0
-      react-dom: 19.2.0(react@19.2.0)
+      react: 19.2.1
+      react-dom: 19.2.1(react@19.2.1)
     transitivePeerDependencies:
       - enzyme
 
-  react@19.2.0: {}
+  react@19.2.1: {}
 
   read-pkg-up@1.0.1:
     dependencies:
@@ -6936,7 +6936,7 @@ snapshots:
 
   safer-buffer@2.1.2: {}
 
-  sass@1.94.1:
+  sass@1.94.2:
     dependencies:
       chokidar: 4.0.3
       immutable: 5.1.4
@@ -7187,11 +7187,11 @@ snapshots:
 
   swiper@11.2.10: {}
 
-  swr@2.3.6(react@19.2.0):
+  swr@2.3.7(react@19.2.1):
     dependencies:
       dequal: 2.0.3
-      react: 19.2.0
-      use-sync-external-store: 1.6.0(react@19.2.0)
+      react: 19.2.1
+      use-sync-external-store: 1.6.0(react@19.2.1)
 
   tar-stream@1.6.2:
     dependencies:
@@ -7349,9 +7349,9 @@ snapshots:
 
   url-to-options@1.0.1: {}
 
-  use-sync-external-store@1.6.0(react@19.2.0):
+  use-sync-external-store@1.6.0(react@19.2.1):
     dependencies:
-      react: 19.2.0
+      react: 19.2.1
 
   util-deprecate@1.0.2: {}
 
@@ -7362,23 +7362,23 @@ snapshots:
       spdx-correct: 3.2.0
       spdx-expression-parse: 3.0.1
 
-  vite-plugin-chunk-split@0.5.0(vite@7.2.2(@types/node@24.10.1)(sass@1.94.1)(terser@5.44.1)):
+  vite-plugin-chunk-split@0.5.0(vite@7.2.6(@types/node@24.10.1)(sass@1.94.2)(terser@5.44.1)):
     dependencies:
       es-module-lexer: 1.7.0
       import-meta-resolve: 4.2.0
       magic-string: 0.30.21
-      vite: 7.2.2(@types/node@24.10.1)(sass@1.94.1)(terser@5.44.1)
+      vite: 7.2.6(@types/node@24.10.1)(sass@1.94.2)(terser@5.44.1)
 
-  vite-plugin-compression@0.5.1(vite@7.2.2(@types/node@24.10.1)(sass@1.94.1)(terser@5.44.1)):
+  vite-plugin-compression@0.5.1(vite@7.2.6(@types/node@24.10.1)(sass@1.94.2)(terser@5.44.1)):
     dependencies:
       chalk: 4.1.2
       debug: 4.4.3
       fs-extra: 10.1.0
-      vite: 7.2.2(@types/node@24.10.1)(sass@1.94.1)(terser@5.44.1)
+      vite: 7.2.6(@types/node@24.10.1)(sass@1.94.2)(terser@5.44.1)
     transitivePeerDependencies:
       - supports-color
 
-  vite-plugin-imagemin@0.6.1(vite@7.2.2(@types/node@24.10.1)(sass@1.94.1)(terser@5.44.1)):
+  vite-plugin-imagemin@0.6.1(vite@7.2.6(@types/node@24.10.1)(sass@1.94.2)(terser@5.44.1)):
     dependencies:
       '@types/imagemin': 7.0.1
       '@types/imagemin-gifsicle': 7.0.4
@@ -7403,32 +7403,32 @@ snapshots:
       imagemin-webp: 6.1.0
       jpegtran-bin: 6.0.1
       pathe: 0.2.0
-      vite: 7.2.2(@types/node@24.10.1)(sass@1.94.1)(terser@5.44.1)
+      vite: 7.2.6(@types/node@24.10.1)(sass@1.94.2)(terser@5.44.1)
     transitivePeerDependencies:
       - supports-color
 
-  vite-plugin-pwa@1.1.0(vite@7.2.2(@types/node@24.10.1)(sass@1.94.1)(terser@5.44.1))(workbox-build@7.3.0(@types/babel__core@7.20.5))(workbox-window@7.3.0):
+  vite-plugin-pwa@1.2.0(vite@7.2.6(@types/node@24.10.1)(sass@1.94.2)(terser@5.44.1))(workbox-build@7.3.0(@types/babel__core@7.20.5))(workbox-window@7.3.0):
     dependencies:
       debug: 4.4.3
       pretty-bytes: 6.1.1
       tinyglobby: 0.2.15
-      vite: 7.2.2(@types/node@24.10.1)(sass@1.94.1)(terser@5.44.1)
+      vite: 7.2.6(@types/node@24.10.1)(sass@1.94.2)(terser@5.44.1)
       workbox-build: 7.3.0(@types/babel__core@7.20.5)
       workbox-window: 7.3.0
     transitivePeerDependencies:
       - supports-color
 
-  vite-plugin-webfont-dl@3.11.1(vite@7.2.2(@types/node@24.10.1)(sass@1.94.1)(terser@5.44.1)):
+  vite-plugin-webfont-dl@3.11.1(vite@7.2.6(@types/node@24.10.1)(sass@1.94.2)(terser@5.44.1)):
     dependencies:
       axios: 1.13.2
       clean-css: 5.3.3
       flat-cache: 6.1.19
       picocolors: 1.1.1
-      vite: 7.2.2(@types/node@24.10.1)(sass@1.94.1)(terser@5.44.1)
+      vite: 7.2.6(@types/node@24.10.1)(sass@1.94.2)(terser@5.44.1)
     transitivePeerDependencies:
       - debug
 
-  vite@7.2.2(@types/node@24.10.1)(sass@1.94.1)(terser@5.44.1):
+  vite@7.2.6(@types/node@24.10.1)(sass@1.94.2)(terser@5.44.1):
     dependencies:
       esbuild: 0.25.12
       fdir: 6.5.0(picomatch@4.0.3)
@@ -7439,7 +7439,7 @@ snapshots:
     optionalDependencies:
       '@types/node': 24.10.1
       fsevents: 2.3.3
-      sass: 1.94.1
+      sass: 1.94.2
       terser: 5.44.1
 
   webidl-conversions@4.0.2: {}
