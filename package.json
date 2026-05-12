@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
-    "dayjs": "^1.11.19",
+    "dayjs": "^1.11.20",
     "react": "^19.2.1",
     "react-dom": "^19.2.1",
     "react-feather": "^2.0.10",
