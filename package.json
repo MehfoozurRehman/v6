@@ -5,7 +5,7 @@
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "dayjs": "^1.11.20",
-    "react": "^19.2.1",
+    "react": "^19.2.6",
     "react-dom": "^19.2.1",
     "react-feather": "^2.0.10",
     "react-github-calendar": "^4.5.11",
@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "@types/node": "^25.7.0",
-    "@types/react": "^19.2.7",
+    "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^5.2.0",
     "sass": "^1.99.0",
