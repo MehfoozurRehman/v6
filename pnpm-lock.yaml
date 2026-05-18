@@ -39,8 +39,8 @@ importers:
         specifier: ^11.2.10
         version: 11.2.10
       swr:
-        specifier: ^2.3.7
-        version: 2.3.7(react@19.2.6)
+        specifier: ^2.4.1
+        version: 2.4.1(react@19.2.6)
     devDependencies:
       '@types/node':
         specifier: ^25.7.0
@@ -3205,8 +3205,8 @@ packages:
     resolution: {integrity: sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q==}
     engines: {node: '>=8'}
 
-  smob@1.6.1:
-    resolution: {integrity: sha512-KAkBqZl3c2GvNgNhcoyJae1aKldDW0LO279wF9bk1PnluRTETKBq0WyzRXxEhoQLk56yHaOY4JCBEKDuJIET5g==}
+  smob@1.6.2:
+    resolution: {integrity: sha512-RQsvleCbF8cVHEv+xuDGaA4pOizFqJ0GgjtMSRo6oP8pnN7WsigHgVGey6aILRBKv4W2YOMHLqbKdnB6hpB9fw==}
     engines: {node: '>=20.0.0'}
 
   sort-keys-length@1.0.1:
@@ -3348,8 +3348,8 @@ packages:
     resolution: {integrity: sha512-RMeVUUjTQH+6N3ckimK93oxz6Sn5la4aDlgPzB+rBrG/smPdCTicXyhxa+woIpopz+jewEloiEE3lKo1h9w2YQ==}
     engines: {node: '>= 4.7.0'}
 
-  swr@2.3.7:
-    resolution: {integrity: sha512-ZEquQ82QvalqTxhBVv/DlAg2mbmUjF4UgpPg9wwk4ufb9rQnZXh1iKyyKBqV6bQGu1Ie7L1QwSYO07qFIa1p+g==}
+  swr@2.4.1:
+    resolution: {integrity: sha512-2CC6CiKQtEwaEeNiqWTAw9PGykW8SR5zZX8MZk6TeAvEAnVS7Visz8WzphqgtQ8v2xz/4Q5K+j+SeMaKXeeQIA==}
     peerDependencies:
       react: ^16.11.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
 
@@ -4616,7 +4616,7 @@ snapshots:
   '@rollup/plugin-terser@0.4.4(rollup@2.80.0)':
     dependencies:
       serialize-javascript: 6.0.2
-      smob: 1.6.1
+      smob: 1.6.2
       terser: 5.47.1
     optionalDependencies:
       rollup: 2.80.0
@@ -7191,7 +7191,7 @@ snapshots:
 
   slash@3.0.0: {}
 
-  smob@1.6.1: {}
+  smob@1.6.2: {}
 
   sort-keys-length@1.0.1:
     dependencies:
@@ -7346,7 +7346,7 @@ snapshots:
 
   swiper@11.2.10: {}
 
-  swr@2.3.7(react@19.2.6):
+  swr@2.4.1(react@19.2.6):
     dependencies:
       dequal: 2.0.3
       react: 19.2.6
