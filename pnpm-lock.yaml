@@ -43,8 +43,8 @@ importers:
         version: 2.4.1(react@19.2.7)
     devDependencies:
       '@types/node':
-        specifier: ^25.9.2
-        version: 25.9.2
+        specifier: ^25.9.3
+        version: 25.9.3
       '@types/react':
         specifier: ^19.2.17
         version: 19.2.17
@@ -53,7 +53,7 @@ importers:
         version: 19.2.3(@types/react@19.2.17)
       '@vitejs/plugin-react':
         specifier: ^6.0.2
-        version: 6.0.2(vite@8.0.16(@types/node@25.9.2)(esbuild@0.27.7)(sass@1.100.0)(terser@5.48.0))
+        version: 6.0.2(vite@8.0.16(@types/node@25.9.3)(esbuild@0.27.7)(sass@1.100.0)(terser@5.48.0))
       sass:
         specifier: ^1.100.0
         version: 1.100.0
@@ -62,22 +62,22 @@ importers:
         version: 6.0.3
       vite:
         specifier: ^8.0.16
-        version: 8.0.16(@types/node@25.9.2)(esbuild@0.27.7)(sass@1.100.0)(terser@5.48.0)
+        version: 8.0.16(@types/node@25.9.3)(esbuild@0.27.7)(sass@1.100.0)(terser@5.48.0)
       vite-plugin-chunk-split:
         specifier: ^0.5.0
-        version: 0.5.0(vite@8.0.16(@types/node@25.9.2)(esbuild@0.27.7)(sass@1.100.0)(terser@5.48.0))
+        version: 0.5.0(vite@8.0.16(@types/node@25.9.3)(esbuild@0.27.7)(sass@1.100.0)(terser@5.48.0))
       vite-plugin-compression:
         specifier: ^0.5.1
-        version: 0.5.1(vite@8.0.16(@types/node@25.9.2)(esbuild@0.27.7)(sass@1.100.0)(terser@5.48.0))
+        version: 0.5.1(vite@8.0.16(@types/node@25.9.3)(esbuild@0.27.7)(sass@1.100.0)(terser@5.48.0))
       vite-plugin-imagemin:
         specifier: ^0.6.1
-        version: 0.6.1(vite@8.0.16(@types/node@25.9.2)(esbuild@0.27.7)(sass@1.100.0)(terser@5.48.0))
+        version: 0.6.1(vite@8.0.16(@types/node@25.9.3)(esbuild@0.27.7)(sass@1.100.0)(terser@5.48.0))
       vite-plugin-pwa:
         specifier: ^1.3.0
-        version: 1.3.0(vite@8.0.16(@types/node@25.9.2)(esbuild@0.27.7)(sass@1.100.0)(terser@5.48.0))(workbox-build@7.3.0(@types/babel__core@7.20.5))(workbox-window@7.3.0)
+        version: 1.3.0(vite@8.0.16(@types/node@25.9.3)(esbuild@0.27.7)(sass@1.100.0)(terser@5.48.0))(workbox-build@7.3.0(@types/babel__core@7.20.5))(workbox-window@7.3.0)
       vite-plugin-webfont-dl:
         specifier: ^3.12.0
-        version: 3.12.0(vite@8.0.16(@types/node@25.9.2)(esbuild@0.27.7)(sass@1.100.0)(terser@5.48.0))
+        version: 3.12.0(vite@8.0.16(@types/node@25.9.3)(esbuild@0.27.7)(sass@1.100.0)(terser@5.48.0))
 
 packages:
 
@@ -1148,8 +1148,8 @@ packages:
     resolution: {integrity: sha512-zmPitbQ8+6zNutpwgcQuLcsEpn/Cj54Kbn7L5pX0Os5kdWplB7xPgEh/g+SWOB/qmows2gpuCaPyduq8ZZRnxA==}
     deprecated: This is a stub types definition. minimatch provides its own type definitions, so you do not need this installed.
 
-  '@types/node@25.9.2':
-    resolution: {integrity: sha512-G05zqtJhcDLb8uslf5EjCxXg9G1KQxiV8OS0R26IC//Eoyitzqe8z37I7cqvnZlrlSfgocQRfSn/AHBZJJFyGw==}
+  '@types/node@25.9.3':
+    resolution: {integrity: sha512-603BddQMv3pUcr4U2dhujk83N2tTDVr/34wII2B6bJy6g+8WD6yUb11jszNs0gdi4PesVWl7ABt8nYMVpnLUcg==}
 
   '@types/react-dom@19.2.3':
     resolution: {integrity: sha512-jp2L/eY6fn+KgVVQAOqYItbF0VY/YApe5Mz2F0aykSO8gx31bYCZyvSeYxCHKvzHG5eZjc+zyaS5BrBWya2+kQ==}
@@ -4902,7 +4902,7 @@ snapshots:
 
   '@types/cheerio@0.22.35':
     dependencies:
-      '@types/node': 25.9.2
+      '@types/node': 25.9.3
 
   '@types/estree@0.0.39': {}
 
@@ -4911,7 +4911,7 @@ snapshots:
   '@types/glob@7.2.0':
     dependencies:
       '@types/minimatch': 6.0.0
-      '@types/node': 25.9.2
+      '@types/node': 25.9.3
 
   '@types/imagemin-gifsicle@7.0.4':
     dependencies:
@@ -4940,17 +4940,17 @@ snapshots:
 
   '@types/imagemin@7.0.1':
     dependencies:
-      '@types/node': 25.9.2
+      '@types/node': 25.9.3
 
   '@types/keyv@3.1.4':
     dependencies:
-      '@types/node': 25.9.2
+      '@types/node': 25.9.3
 
   '@types/minimatch@6.0.0':
     dependencies:
       minimatch: 10.1.1
 
-  '@types/node@25.9.2':
+  '@types/node@25.9.3':
     dependencies:
       undici-types: 7.24.6
 
@@ -4966,18 +4966,18 @@ snapshots:
 
   '@types/responselike@1.0.3':
     dependencies:
-      '@types/node': 25.9.2
+      '@types/node': 25.9.3
 
   '@types/svgo@2.6.4':
     dependencies:
-      '@types/node': 25.9.2
+      '@types/node': 25.9.3
 
   '@types/trusted-types@2.0.7': {}
 
-  '@vitejs/plugin-react@6.0.2(vite@8.0.16(@types/node@25.9.2)(esbuild@0.27.7)(sass@1.100.0)(terser@5.48.0))':
+  '@vitejs/plugin-react@6.0.2(vite@8.0.16(@types/node@25.9.3)(esbuild@0.27.7)(sass@1.100.0)(terser@5.48.0))':
     dependencies:
       '@rolldown/pluginutils': 1.0.1
-      vite: 8.0.16(@types/node@25.9.2)(esbuild@0.27.7)(sass@1.100.0)(terser@5.48.0)
+      vite: 8.0.16(@types/node@25.9.3)(esbuild@0.27.7)(sass@1.100.0)(terser@5.48.0)
 
   acorn@8.17.0: {}
 
@@ -7789,23 +7789,23 @@ snapshots:
       spdx-correct: 3.2.0
       spdx-expression-parse: 3.0.1
 
-  vite-plugin-chunk-split@0.5.0(vite@8.0.16(@types/node@25.9.2)(esbuild@0.27.7)(sass@1.100.0)(terser@5.48.0)):
+  vite-plugin-chunk-split@0.5.0(vite@8.0.16(@types/node@25.9.3)(esbuild@0.27.7)(sass@1.100.0)(terser@5.48.0)):
     dependencies:
       es-module-lexer: 1.7.0
       import-meta-resolve: 4.2.0
       magic-string: 0.30.21
-      vite: 8.0.16(@types/node@25.9.2)(esbuild@0.27.7)(sass@1.100.0)(terser@5.48.0)
+      vite: 8.0.16(@types/node@25.9.3)(esbuild@0.27.7)(sass@1.100.0)(terser@5.48.0)
 
-  vite-plugin-compression@0.5.1(vite@8.0.16(@types/node@25.9.2)(esbuild@0.27.7)(sass@1.100.0)(terser@5.48.0)):
+  vite-plugin-compression@0.5.1(vite@8.0.16(@types/node@25.9.3)(esbuild@0.27.7)(sass@1.100.0)(terser@5.48.0)):
     dependencies:
       chalk: 4.1.2
       debug: 4.4.3
       fs-extra: 10.1.0
-      vite: 8.0.16(@types/node@25.9.2)(esbuild@0.27.7)(sass@1.100.0)(terser@5.48.0)
+      vite: 8.0.16(@types/node@25.9.3)(esbuild@0.27.7)(sass@1.100.0)(terser@5.48.0)
     transitivePeerDependencies:
       - supports-color
 
-  vite-plugin-imagemin@0.6.1(vite@8.0.16(@types/node@25.9.2)(esbuild@0.27.7)(sass@1.100.0)(terser@5.48.0)):
+  vite-plugin-imagemin@0.6.1(vite@8.0.16(@types/node@25.9.3)(esbuild@0.27.7)(sass@1.100.0)(terser@5.48.0)):
     dependencies:
       '@types/imagemin': 7.0.1
       '@types/imagemin-gifsicle': 7.0.4
@@ -7830,32 +7830,32 @@ snapshots:
       imagemin-webp: 6.1.0
       jpegtran-bin: 6.0.1
       pathe: 0.2.0
-      vite: 8.0.16(@types/node@25.9.2)(esbuild@0.27.7)(sass@1.100.0)(terser@5.48.0)
+      vite: 8.0.16(@types/node@25.9.3)(esbuild@0.27.7)(sass@1.100.0)(terser@5.48.0)
     transitivePeerDependencies:
       - supports-color
 
-  vite-plugin-pwa@1.3.0(vite@8.0.16(@types/node@25.9.2)(esbuild@0.27.7)(sass@1.100.0)(terser@5.48.0))(workbox-build@7.3.0(@types/babel__core@7.20.5))(workbox-window@7.3.0):
+  vite-plugin-pwa@1.3.0(vite@8.0.16(@types/node@25.9.3)(esbuild@0.27.7)(sass@1.100.0)(terser@5.48.0))(workbox-build@7.3.0(@types/babel__core@7.20.5))(workbox-window@7.3.0):
     dependencies:
       debug: 4.4.3
       pretty-bytes: 6.1.1
       tinyglobby: 0.2.15
-      vite: 8.0.16(@types/node@25.9.2)(esbuild@0.27.7)(sass@1.100.0)(terser@5.48.0)
+      vite: 8.0.16(@types/node@25.9.3)(esbuild@0.27.7)(sass@1.100.0)(terser@5.48.0)
       workbox-build: 7.3.0(@types/babel__core@7.20.5)
       workbox-window: 7.3.0
     transitivePeerDependencies:
       - supports-color
 
-  vite-plugin-webfont-dl@3.12.0(vite@8.0.16(@types/node@25.9.2)(esbuild@0.27.7)(sass@1.100.0)(terser@5.48.0)):
+  vite-plugin-webfont-dl@3.12.0(vite@8.0.16(@types/node@25.9.3)(esbuild@0.27.7)(sass@1.100.0)(terser@5.48.0)):
     dependencies:
       axios: 1.13.2
       clean-css: 5.3.3
       flat-cache: 6.1.19
       picocolors: 1.1.1
-      vite: 8.0.16(@types/node@25.9.2)(esbuild@0.27.7)(sass@1.100.0)(terser@5.48.0)
+      vite: 8.0.16(@types/node@25.9.3)(esbuild@0.27.7)(sass@1.100.0)(terser@5.48.0)
     transitivePeerDependencies:
       - debug
 
-  vite@8.0.16(@types/node@25.9.2)(esbuild@0.27.7)(sass@1.100.0)(terser@5.48.0):
+  vite@8.0.16(@types/node@25.9.3)(esbuild@0.27.7)(sass@1.100.0)(terser@5.48.0):
     dependencies:
       lightningcss: 1.32.0
       picomatch: 4.0.4
@@ -7863,7 +7863,7 @@ snapshots:
       rolldown: 1.0.3
       tinyglobby: 0.2.17
     optionalDependencies:
-      '@types/node': 25.9.2
+      '@types/node': 25.9.3
       esbuild: 0.27.7
       fsevents: 2.3.3
       sass: 1.100.0
