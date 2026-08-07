@@ -1,0 +1,32 @@
+{
+  "name": "Mehfooz-ur-Rehman Portfolio",
+  "short_name": "MUR Portfolio",
+  "description": "This is Mehfooz-ur-Rehman's portfolio.",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "192x192",
+      "purpose": "any"
+    },
+    {
+      "src": "favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F1EFE5",
+  "theme_color": "#0C2120",
+  "orientation": "natural",
+  "lang": "en",
+  "dir": "auto",
+  "scope": "."
+}

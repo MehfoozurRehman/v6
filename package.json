@@ -1,0 +1,34 @@
+{
+  "name": "mehfooz-portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "node scripts/generate-cv-pdf.mjs && next build",
+    "generate:cv": "node scripts/generate-cv-pdf.mjs",
+    "start": "next start",
+    "lint": "eslint",
+    "deploy": "pnpm build && firebase deploy --only hosting"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "lucide-react": "^1.23.0",
+    "next": "16.2.10",
+    "pdfkit": "^0.19.1",
+    "react": "19.2.7",
+    "react-dom": "19.2.7",
+    "react-github-calendar": "^5.0.6"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.2",
+    "@types/node": "^26.1.0",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "eslint": "^9.39.4",
+    "eslint-config-next": "16.2.10",
+    "sharp": "^0.35.3",
+    "tailwindcss": "^4.3.2",
+    "typescript": "^6.0.3"
+  },
+  "packageManager": "pnpm@11.9.0"
+}

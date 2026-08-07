@@ -1,0 +1,38 @@
+"use client";
+
+type HomeLinkProps = {
+  href: string;
+};
+
+export function HomeLink({ href }: HomeLinkProps) {
+  return (
+    <a
+      className="grid size-14 place-items-center"
+      href={href}
+      aria-label="Mehfooz-ur-Rehman home"
+      onClick={(event) => {
+        event.preventDefault();
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        history.replaceState(null, "", href);
+      }}
+    >
+      <svg
+        className="size-14"
+        viewBox="0 0 169 168"
+        fill="none"
+        aria-hidden="true"
+      >
+        <path
+          d="M84.5 15.25a19.875 19.875 0 0 0-14.1 5.817L21.36 69.816A19.863 19.863 0 0 0 15.46 84a19.863 19.863 0 0 0 5.9 14.184l49.04 48.75a19.875 19.875 0 0 0 14.1 5.815c5.32 0 10.327-2.065 14.1-5.816l49.04-48.749A19.863 19.863 0 0 0 153.54 84a19.863 19.863 0 0 0-5.9-14.184L98.6 21.066a19.875 19.875 0 0 0-14.1-5.815Z"
+          stroke="var(--color-accent)"
+          strokeWidth="8"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M109.742 106.619h-5.735V76.227L85.145 95.288c-1.093-1-1.693-1.5-2.246-2.053-7-6.995-13.949-14.049-21.033-20.96-1.808-1.764-2.9-3.515-2.539-6.11a37.276 37.276 0 0 0 .035-4.712l25.064 25.263 25.317-25.508ZM65.306 92.218v14.376h-5.823V77.96l28.716 28.791c-2.085 0-4.413.131-6.713-.069a4.517 4.517 0 0 1-2.355-1.468c-4.416-4.4-8.777-8.848-13.156-13.282Z"
+          fill="var(--color-text)"
+        />
+      </svg>
+    </a>
+  );
+}
