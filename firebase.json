@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "mehfooz-ur-rehman",
+    "site": "mehfoozurrehmanv6",
     "public": "out",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "cleanUrls": true,
