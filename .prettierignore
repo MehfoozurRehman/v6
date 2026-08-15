@@ -1,1 +1,14 @@
-node_modules
+# Build directories
+build/*
+dist/*
+public/*
+**/out/*
+**/.next/*
+**/node_modules/*
+**/_generated/*
+pnpm-lock.yaml
+yarn.lock
+package-lock.json
+jsconfig.json
+out
+dist
