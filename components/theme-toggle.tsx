@@ -1,54 +1,50 @@
-"use client";
+'use client';
 
-import { Moon, Sun } from "lucide-react";
+import { Moon, Sun } from 'lucide-react';
 
-import { useEffect } from "react";
+import { useEffect } from 'react';
 
-type Theme = "dark" | "light";
+type Theme = 'dark' | 'light';
 
 function getSystemTheme(): Theme {
-  return window.matchMedia("(prefers-color-scheme: dark)").matches
-    ? "dark"
-    : "light";
+  return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
 }
 
 function getCurrentTheme(): Theme {
-  if (document.documentElement.dataset.theme === "dark") {
-    return "dark";
+  if (document.documentElement.dataset.theme === 'dark') {
+    return 'dark';
   }
 
-  return "light";
+  return 'light';
 }
 
 export function ThemeToggle() {
   useEffect(() => {
-    const query = window.matchMedia("(prefers-color-scheme: dark)");
+    const query = window.matchMedia('(prefers-color-scheme: dark)');
     const syncSystemTheme = () => {
-      if (localStorage.getItem("portfolio-theme")) {
+      if (localStorage.getItem('portfolio-theme')) {
         return;
       }
 
       const nextTheme = getSystemTheme();
       document.documentElement.dataset.theme = nextTheme;
       document.documentElement.style.colorScheme = nextTheme;
-      document.documentElement.style.backgroundColor =
-        nextTheme === "dark" ? "#050507" : "#f1efe5";
+      document.documentElement.style.backgroundColor = nextTheme === 'dark' ? '#050507' : '#f1efe5';
     };
 
-    query.addEventListener("change", syncSystemTheme);
+    query.addEventListener('change', syncSystemTheme);
 
     return () => {
-      query.removeEventListener("change", syncSystemTheme);
+      query.removeEventListener('change', syncSystemTheme);
     };
   }, []);
 
   function toggleTheme() {
-    const nextTheme = getCurrentTheme() === "dark" ? "light" : "dark";
+    const nextTheme = getCurrentTheme() === 'dark' ? 'light' : 'dark';
     document.documentElement.dataset.theme = nextTheme;
     document.documentElement.style.colorScheme = nextTheme;
-    document.documentElement.style.backgroundColor =
-      nextTheme === "dark" ? "#050507" : "#f1efe5";
-    localStorage.setItem("portfolio-theme", nextTheme);
+    document.documentElement.style.backgroundColor = nextTheme === 'dark' ? '#050507' : '#f1efe5';
+    localStorage.setItem('portfolio-theme', nextTheme);
   }
 
   return (

@@ -1,20 +1,20 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  output: "export",
+  output: 'export',
   turbopack: {
-    root: __dirname
+    root: __dirname,
   },
   images: {
     remotePatterns: [
       {
-        protocol: "https",
-        hostname: "www.google.com",
-        pathname: "/s2/favicons",
-      }
+        protocol: 'https',
+        hostname: 'www.google.com',
+        pathname: '/s2/favicons',
+      },
     ],
-    unoptimized: true
-  }
+    unoptimized: true,
+  },
 };
 
 export default nextConfig;

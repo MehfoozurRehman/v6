@@ -1,16 +1,15 @@
-import PDFDocument from "pdfkit";
-import { cvContent } from "./cv-content.mjs";
-import fs from "node:fs";
-import path from "node:path";
+import PDFDocument from 'pdfkit';
+import { cvContent } from './cv-content.mjs';
+import fs from 'node:fs';
+import path from 'node:path';
 
-const { profile, experience, education, stack, profileHighlights, services } =
-  cvContent;
+const { profile, experience, education, stack, profileHighlights, services } = cvContent;
 
-const outPath = path.join(process.cwd(), "public", "cv.pdf");
+const outPath = path.join(process.cwd(), 'public', 'cv.pdf');
 fs.mkdirSync(path.dirname(outPath), { recursive: true });
 
 const doc = new PDFDocument({
-  size: "A4",
+  size: 'A4',
   margin: 0,
   info: {
     Title: `${profile.name} CV`,
@@ -28,44 +27,30 @@ const mainW = rightX - M - 30;
 const sideW = W - rightX - M;
 
 const color = {
-  ink: "#181b20",
-  text: "#303640",
-  muted: "#66707d",
-  rule: "#d9dee5",
-  soft: "#f3f5f7",
-  accent: "#d95836",
-  accentSoft: "#fff1eb",
-  dark: "#111827",
+  ink: '#181b20',
+  text: '#303640',
+  muted: '#66707d',
+  rule: '#d9dee5',
+  soft: '#f3f5f7',
+  accent: '#d95836',
+  accentSoft: '#fff1eb',
+  dark: '#111827',
 };
 
 function text(value, x, y, options = {}) {
-  const {
-    size = 9.4,
-    font = "Helvetica",
-    fill = color.text,
-    width,
-    lineGap = 1.5,
-    align,
-  } = options;
-  doc
-    .fillColor(fill)
-    .font(font)
-    .fontSize(size)
-    .text(value, x, y, { width, lineGap, align });
+  const { size = 9.4, font = 'Helvetica', fill = color.text, width, lineGap = 1.5, align } = options;
+  doc.fillColor(fill).font(font).fontSize(size).text(value, x, y, { width, lineGap, align });
 }
 
 function height(value, width, options = {}) {
-  const { size = 9.4, font = "Helvetica", lineGap = 1.5 } = options;
-  return doc
-    .font(font)
-    .fontSize(size)
-    .heightOfString(value, { width, lineGap });
+  const { size = 9.4, font = 'Helvetica', lineGap = 1.5 } = options;
+  return doc.font(font).fontSize(size).heightOfString(value, { width, lineGap });
 }
 
 function section(label, x, y, width) {
   text(label.toUpperCase(), x, y, {
     size: 8.2,
-    font: "Helvetica-Bold",
+    font: 'Helvetica-Bold',
     fill: color.accent,
     width,
   });
@@ -79,15 +64,15 @@ function section(label, x, y, width) {
 }
 
 function pill(label, x, y, maxW = sideW) {
-  doc.font("Helvetica-Bold").fontSize(7.6);
+  doc.font('Helvetica-Bold').fontSize(7.6);
   const w = Math.min(doc.widthOfString(label) + 14, maxW);
   doc.roundedRect(x, y, w, 17, 8.5).fill(color.soft);
   text(label, x + 7, y + 4.8, {
     size: 7.6,
-    font: "Helvetica-Bold",
+    font: 'Helvetica-Bold',
     fill: color.dark,
     width: w - 14,
-    align: "center",
+    align: 'center',
   });
   return w;
 }
@@ -96,7 +81,7 @@ function wrappedPills(items, x, y, width) {
   let cx = x;
   let cy = y;
   items.forEach((item) => {
-    doc.font("Helvetica-Bold").fontSize(7.6);
+    doc.font('Helvetica-Bold').fontSize(7.6);
     const w = Math.min(doc.widthOfString(item) + 14, width);
     if (cx + w > x + width) {
       cx = x;
@@ -113,23 +98,23 @@ doc.rect(0, 0, W, 128).fill(color.dark);
 doc.rect(0, 128, W, 4).fill(color.accent);
 text(profile.name, M, 34, {
   size: 26,
-  font: "Helvetica-Bold",
-  fill: "white",
+  font: 'Helvetica-Bold',
+  fill: 'white',
   width: 350,
 });
 text(profile.role, M, 71, {
   size: 11,
-  font: "Helvetica-Bold",
-  fill: "#dbe3ee",
+  font: 'Helvetica-Bold',
+  fill: '#dbe3ee',
   width: 300,
 });
 text(profile.headline, M, 92, {
   size: 8.8,
-  fill: "#c7d0dc",
+  fill: '#c7d0dc',
   width: 355,
 });
 
-doc.roundedRect(rightX, 32, sideW, 70, 10).fill("#ffffff");
+doc.roundedRect(rightX, 32, sideW, 70, 10).fill('#ffffff');
 text(profile.email, rightX + 13, 46, {
   size: 8.2,
   fill: color.ink,
@@ -149,7 +134,7 @@ text(profile.location, rightX + 13, 79, {
 let y = 154;
 
 // Profile
-y = section("Profile", M, y, mainW);
+y = section('Profile', M, y, mainW);
 text(profile.about, M, y, {
   size: 9.6,
   fill: color.text,
@@ -159,17 +144,17 @@ text(profile.about, M, y, {
 y += height(profile.about, mainW, { size: 9.6, lineGap: 2 }) + 18;
 
 // Experience
-y = section("Experience", M, y, mainW);
+y = section('Experience', M, y, mainW);
 experience.forEach(([role, company, period, location, summary]) => {
   text(role, M, y, {
     size: 11,
-    font: "Helvetica-Bold",
+    font: 'Helvetica-Bold',
     fill: color.ink,
     width: mainW,
   });
   text(`${company} | ${period}`, M, y + 15, {
     size: 8.5,
-    font: "Helvetica-Bold",
+    font: 'Helvetica-Bold',
     fill: color.accent,
     width: mainW,
   });
@@ -185,11 +170,11 @@ experience.forEach(([role, company, period, location, summary]) => {
 
 // Sidebar
 let sy = 154;
-sy = section("Strengths", rightX, sy, sideW);
+sy = section('Strengths', rightX, sy, sideW);
 profileHighlights.forEach(([title, body]) => {
   text(title, rightX, sy, {
     size: 9.1,
-    font: "Helvetica-Bold",
+    font: 'Helvetica-Bold',
     fill: color.ink,
     width: sideW,
   });
@@ -203,12 +188,12 @@ profileHighlights.forEach(([title, body]) => {
 });
 
 sy += 8;
-sy = section("Services", rightX, sy, sideW);
+sy = section('Services', rightX, sy, sideW);
 services.forEach(([title]) => {
   doc.circle(rightX + 3, sy + 5, 2.1).fill(color.accent);
   text(title, rightX + 12, sy, {
     size: 8.7,
-    font: "Helvetica-Bold",
+    font: 'Helvetica-Bold',
     fill: color.ink,
     width: sideW - 12,
   });
@@ -216,11 +201,11 @@ services.forEach(([title]) => {
 });
 
 sy += 8;
-sy = section("Education", rightX, sy, sideW);
+sy = section('Education', rightX, sy, sideW);
 education.forEach(([school, degree, period]) => {
   text(school, rightX, sy, {
     size: 9,
-    font: "Helvetica-Bold",
+    font: 'Helvetica-Bold',
     fill: color.ink,
     width: sideW,
   });
@@ -230,18 +215,18 @@ education.forEach(([school, degree, period]) => {
 });
 
 sy += 8;
-sy = section("Stack", rightX, sy, sideW);
+sy = section('Stack', rightX, sy, sideW);
 wrappedPills(stack, rightX, sy, sideW);
 
 // Footer
 doc.rect(M, H - 54, W - M * 2, 1).fill(color.rule);
-text("Portfolio CV", M, H - 38, { size: 8, fill: color.muted, width: 120 });
+text('Portfolio CV', M, H - 38, { size: 8, fill: color.muted, width: 120 });
 text(profile.name, W - M - 140, H - 38, {
   size: 8,
   fill: color.muted,
   width: 140,
-  align: "right",
+  align: 'right',
 });
 
 doc.end();
-doc.on("finish", () => process.stdout.write(`Wrote ${outPath}\n`));
+doc.on('finish', () => process.stdout.write(`Wrote ${outPath}\n`));

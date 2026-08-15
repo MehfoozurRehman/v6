@@ -1,6 +1,6 @@
-"use client";
+'use client';
 
-import Script from "next/script";
+import Script from 'next/script';
 
 const swResetScript = `
 (async () => {
@@ -28,11 +28,5 @@ const swResetScript = `
 `;
 
 export function ServiceWorkerResetScript() {
-  return (
-    <Script
-      id="sw-reset-script"
-      strategy="beforeInteractive"
-      dangerouslySetInnerHTML={{ __html: swResetScript }}
-    />
-  );
+  return <Script id="sw-reset-script" strategy="beforeInteractive" dangerouslySetInnerHTML={{ __html: swResetScript }} />;
 }
