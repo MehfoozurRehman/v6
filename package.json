@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "node scripts/generate-cv-pdf.mjs && next build",
+    "dev": "node api.js && next dev",
+    "build": "node api.js && node scripts/generate-cv-pdf.mjs && next build",
     "generate:cv": "node scripts/generate-cv-pdf.mjs",
-    "start": "next start",
+    "start": "node api.js && next start",
     "lint": "eslint",
     "deploy": "pnpm build && firebase deploy --only hosting"
   },

@@ -1,41 +1,54 @@
-# Mehfooz-ur-Rehman Portfolio
+# Developer Portfolio v6
 
-Premium portfolio for Mehfooz-ur-Rehman, built with Next.js App Router, TypeScript, Tailwind CSS, and Firebase Hosting.
+The personal developer portfolio, interactive GitHub activity graph, programmatic CV generator, and project showcase for Mehfooz-ur-Rehman built with Next.js 16 App Router, React 19, Tailwind CSS v4, and PDFKit.
 
-## Stack
+## Overview
 
-- Next.js 16 App Router
-- React 19
-- TypeScript
-- Tailwind CSS v4
-- Firebase Hosting static export
+`v6` features a high-performance modern web interface highlighting engineering competencies, live GitHub activity tracking (`react-github-calendar`), automated programmatic PDF curriculum vitae compilation (`pdfkit`), EmailJS inquiry messaging, and automated Firebase Hosting deployment.
 
-## Commands
+## Tech Stack
 
-```bash
-pnpm install
-pnpm dev
-pnpm lint
-pnpm build
-```
+- **Framework**: [Next.js](https://nextjs.org/) (v16 App Router)
+- **Frontend Core**: React 19, TypeScript
+- **Styling**: Tailwind CSS v4 (`@tailwindcss/postcss`)
+- **PDF Generation**: PDFKit (`pdfkit`, `scripts/generate-cv-pdf.mjs`)
+- **Visuals & Heatmaps**: `react-github-calendar`, Lucide Icons
+- **Email Service**: `@emailjs/browser`
+- **Hosting**: Firebase Hosting (`firebase.json`)
 
-## Deployment
+## Prerequisites
 
-The site exports to `out` and deploys to Firebase Hosting.
+- Node.js (v20 or higher recommended)
+- Package manager (`pnpm` v11+ recommended)
 
-```bash
-pnpm build
-firebase deploy --only hosting:mehfooz-ur-rehman --project mehfooz-ur-rehman
-```
+## Getting Started
 
-Deploy locally with the Firebase CLI after logging in from your machine.
+1. **Install dependencies**:
+   ```bash
+   pnpm install
+   ```
 
-## Contact form
+2. **Generate CV PDF**:
+   ```bash
+   pnpm generate:cv
+   ```
 
-The contact form sends directly through EmailJS and delivers to `mehfoozijaz786@gmail.com`.
+3. **Run the Development Server**:
+   ```bash
+   pnpm dev
+   ```
 
-Set these EmailJS environment variables before deploying:
+4. **Access the Portfolio**:
+   Open `http://localhost:3000` in your web browser.
 
-- `NEXT_PUBLIC_EMAILJS_SERVICE_ID`
-- `NEXT_PUBLIC_EMAILJS_TEMPLATE_ID`
-- `NEXT_PUBLIC_EMAILJS_PUBLIC_KEY`
+## Available Scripts
+
+- `pnpm dev` - Starts the Next.js development server.
+- `pnpm generate:cv` - Generates the PDF resume via PDFKit.
+- `pnpm build` - Compiles PDF resume and builds the Next.js application.
+- `pnpm start` - Starts the production server.
+- `pnpm deploy` - Builds and deploys directly to Firebase Hosting.
+
+## Author
+
+Created by [Mehfooz-ur-Rehman](https://github.com/MehfoozurRehman).
