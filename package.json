@@ -1,34 +1,37 @@
 {
-  "name": "mehfooz-portfolio",
+  "name": "protfolio",
   "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "node scripts/generate-cv-pdf.mjs && next build",
-    "generate:cv": "node scripts/generate-cv-pdf.mjs",
-    "start": "next start",
-    "lint": "eslint",
-    "deploy": "pnpm build && firebase deploy --only hosting"
-  },
   "dependencies": {
-    "@emailjs/browser": "^4.4.1",
-    "lucide-react": "^1.37.0",
-    "next": "16.3.0",
-    "pdfkit": "^0.19.1",
-    "react": "19.2.8",
-    "react-dom": "19.2.7",
-    "react-github-calendar": "^5.0.9"
+    "@emailjs/browser": "^3.11.0",
+    "dayjs": "^1.11.9",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-feather": "^2.0.10",
+    "react-github-calendar": "^4.0.1",
+    "react-outside-click-handler": "^1.3.0",
+    "react-use-is-online": "^1.3.0",
+    "swiper": "^9.4.1",
+    "swr": "^2.2.0",
+    "wouter": "^2.11.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "vite build && firebase deploy"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4.3.3",
-    "@types/node": "^26.4.0",
-    "@types/react": "^19.2.18",
-    "@types/react-dom": "^19.2.3",
-    "eslint": "^9.39.4",
-    "eslint-config-next": "16.3.0",
-    "sharp": "^0.35.4",
-    "tailwindcss": "^4.3.3",
-    "typescript": "^6.0.3"
-  },
-  "packageManager": "pnpm@11.9.0"
+    "@types/react": "^18.2.20",
+    "@types/react-dom": "^18.2.7",
+    "@vitejs/plugin-react": "^4.0.4",
+    "sass": "^1.65.1",
+    "typescript": "^5.1.6",
+    "vite": "^4.4.9",
+    "vite-plugin-chunk-split": "^0.4.7",
+    "vite-plugin-compression": "^0.5.1",
+    "vite-plugin-imagemin": "^0.6.1",
+    "vite-plugin-pwa": "^0.16.4",
+    "vite-plugin-webfont-dl": "^3.7.6"
+  }
 }

@@ -10,21 +10,21 @@
     },
     {
       "src": "favicon.svg",
-      "type": "image/svg+xml",
+      "type": "image/png",
       "sizes": "192x192",
       "purpose": "any"
     },
     {
       "src": "favicon.svg",
-      "type": "image/svg+xml",
+      "type": "image/png",
       "sizes": "512x512",
       "purpose": "maskable"
     }
   ],
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#F1EFE5",
-  "theme_color": "#0C2120",
+  "background_color": "#0a192f",
+  "theme_color": "#0a192f",
   "orientation": "natural",
   "lang": "en",
   "dir": "auto",
