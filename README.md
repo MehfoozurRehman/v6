@@ -37,5 +37,4 @@ Other scripts: `preview` (Vite preview) and `deploy` (build, then Firebase deplo
 ## What's left
 
 - No tests of any kind.
-- Client and project content is loaded at runtime from the API and GitHub, with no fallback if those requests fail.
 - Both `yarn.lock` and `pnpm-lock.yaml` are committed, so the package manager is not settled.
