@@ -18,8 +18,8 @@
     "wouter": "^2.11.0"
   },
   "scripts": {
-    "dev": "node init && vite",
-    "build": "node init && vite build",
+    "dev": "vite",
+    "build": "vite build",
     "preview": "vite preview",
     "deploy": "vite build && firebase deploy"
   },
